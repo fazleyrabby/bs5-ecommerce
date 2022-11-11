@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap"
+        rel="stylesheet">
+    <link href="./plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+
+    <title>Bootstrap demo</title>
+</head>
+
+<body>
+    <!-- Top Header Section -->
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active"
+                        aria-current="page"><small>hello@test.com</small></a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><small>Free Shipping for all Order of
+                            $99</small></a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-user"></i>
+                        Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                RH-Ecommerce
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="col-md-3 text-end top-icons d-flex justify-content-end gap-3">
+                <a class="position-relative">
+                    <i class="fa-solid fa-heart"></i> <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        3
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <a class="position-relative">
+                    <i class="fa-sharp fa-solid fa-bag-shopping"></i><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        1
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <span><strong>items:</strong> $150</span>
+            </div>
+        </header>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar Menu  -->
+            <div class="col-md-3">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item rounded-0">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button bg-info text-white rounded-0 border-0" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;All Categories
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show rounded-0"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body p-0 rounded-0">
+                                <nav class="sidebar">
+                                    <ul class="nav flex-column" id="nav_accordion">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Link name </a>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#"> Submenu links </a>
+                                            <ul class="submenu collapse">
+                                                <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#"> More menus </a>
+                                            <ul class="submenu collapse">
+                                                <li><a class="nav-link" href="#">Submenu item 4 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 5 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 7 </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Something </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Other link </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Something </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Something </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Something </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Something </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Top Slider  -->
+            <div class="col-md-9">
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="input-group mb-3 rounded-0 h-100">
+                            <button class="btn btn-outline-secondary dropdown-toggle rounded-0 border" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                            <input type="text" class="form-control rounded-0" placeholder="Search Term.."
+                                aria-label="Text input with dropdown button">
+                            <span class="input-group-text btn btn-success rounded-0 d-flex">Search</span>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4">other info</div> -->
+                </div>
+                <div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide top-carousel"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./images/2.jpg" class="d-block w-100" alt="2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/3.jpg" class="d-block w-100" alt="3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Categories Card Slider  -->
+    <div class="container">
+        <div class="owl-carousel category-slider">
+            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    1</span></div>
+            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    2</span></div>
+            <div> <img src="./images/3.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    3</span></div>
+            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    4</span></div>
+            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    5</span></div>
+            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    6</span></div>
+            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
+                    7</span></div>
+        </div>
+    </div>
+
+    <!-- Featured Products  -->
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row g-4 featured-products">
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Flash Sales  -->
+
+
+    <!-- 3 column layout of different type of products  -->
+
+
+    <!-- Lates 3 Blogs  -->
+
+    <!-- Mega footer  -->
+    <div class="container">
+        <footer>
+          <div class="row">
+            <div class="col-6 col-md-3 mb-3">
+                <!-- <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19"> -->
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">Address: 60-49 Road 11378 New York</li>
+                    <li class="nav-item mb-2">Phone: +000000000</li>
+                    <li class="nav-item mb-2">Email: hello@test.com</li>
+                  </ul>
+
+                  <small class="d-block mb-3 text-muted">© 2017–2022</small>
+                
+                
+                
+                
+              </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+    <!-- Footer bottom section  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="./plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="./scripts/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 4,
+                loop: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                // nav:true,
+            });
+        });
+    </script>
+</body>
+
+</html>

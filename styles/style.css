@@ -1,0 +1,77 @@
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin-bottom: 3rem;
+}
+.top-carousel{
+    height: 400px;
+}
+.top-carousel .carousel-inner{
+    height: 100%;
+}
+.top-carousel .carousel-inner .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+}
+.top-carousel .carousel-inner .carousel-item .carousel-caption{
+    /* color: #cecece; */
+}
+.sidebar li .submenu{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
+    padding: 0.7rem;
+}
+.sidebar ul li:not(:last-child) {
+    border-bottom: 0.1px solid #f5f5f5;
+}
+.sidebar .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+.top-icons i {
+    font-size: 1.6rem;
+}
+
+.category-slider div img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.category-slider .owl-item.active:not(:last-child){
+    padding-right: 10px;
+}
+
+
+.category-slider div{
+    position: relative;
+    overflow: hidden;
+}
+
+.category-title {
+    position: absolute;
+    bottom: .5rem;
+    left: calc(50% + 10px);
+    background-color: #fcf2f2;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+}
+
+.featured-products img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
