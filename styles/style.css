@@ -5,6 +5,10 @@ body{
 .mb3rem{
     margin-bottom: 3rem;
 }
+.mb6rem{
+    margin-bottom: 6rem;
+}
+
 .top-carousel{
     height: 400px;
 }
@@ -131,6 +135,18 @@ body{
 
 .all-categories-btn:not(.collapsed)::after{
     transform: none;
+}
+
+.flash-sales-image{
+    background-position: top center;
+    background-size: cover;
+}
+
+.blogs .card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .footer-bg{
