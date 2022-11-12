@@ -50,6 +50,10 @@ header.fixed-top a:not(.mobile-icon) i
 .search-bar{
     height: 3.5rem;
 }
+.mobile-category-btn{
+    height: 3.5rem;
+    
+}
 .sidebar li .submenu{ 
 	list-style: none; 
 	margin: 0; 
