@@ -58,6 +58,15 @@ body{
 .sidebar .nav-link:hover {
     color: var(--bs-primary);
 }
+.has-submenu .nav-link{
+    position: relative;
+}
+.has-submenu > .nav-link::after{
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 4%;
+}
 
 .top-icons i {
     font-size: 1.6rem;
@@ -147,6 +156,22 @@ body{
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+.cart-calculation table td,
+.cart-calculation table th{
+    padding: 1rem;
+}
+
+.cart-product img {
+    object-fit: cover;
+}
+.cart-product .info{
+    padding: 1rem 0.5rem;
+}
+
+.list-of-items{
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 .footer-bg{
