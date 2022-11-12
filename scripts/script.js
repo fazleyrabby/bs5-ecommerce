@@ -1,4 +1,52 @@
+'use strict'
 document.addEventListener("DOMContentLoaded", function () {
+    $(".category-slider").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 4,
+            }
+        }
+    });
+
+    $(".brand-carousel").owlCarousel({
+        items: 6,
+        nav: false,
+        dots: false,
+        margin: 10,
+        autoplay: true,
+        navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            400: {
+                items: 3,
+            },
+            700: {
+                items: 5,
+            }
+        }
+    })
+
+    $(".vertical-carousel").owlCarousel({
+        items: 1,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
+    });
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {

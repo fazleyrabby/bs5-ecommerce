@@ -52,7 +52,7 @@
                 <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="menu"
                     aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
-                        <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5> -->
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -338,7 +338,7 @@
                         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
                             id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">All Categories
                                 </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
@@ -1226,45 +1226,7 @@
     <script>
         'use strict'
         $(document).ready(function () {
-            $(".category-slider").owlCarousel({
-                items: 4,
-                loop: true,
-                margin: 10,
-                dots: false,
-                autoplay: true,
-                autoplayHoverPause: true,
-                nav: true,
-                navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 4,
-                    }
-                }
-            });
-
-            $(".brand-carousel").owlCarousel({
-                items: 6,
-                nav: false,
-                dots: false,
-                margin: 10,
-                autoplay: true,
-                navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
-            })
-
-            $(".vertical-carousel").owlCarousel({
-                items: 1,
-                nav: true,
-                dots: false,
-                navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
-            });
-
-            $('.add-to-cart').on('click', function () {
-                alert(1)
-            })
+            
         });
 
 
