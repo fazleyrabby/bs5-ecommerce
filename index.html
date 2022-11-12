@@ -39,12 +39,65 @@
 
     <!-- Navbar -->
     <section class="container">
-        <header id="navbar_top" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <header id="navbar_top"
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 RH-Ecommerce
             </a>
 
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <div class="mobile-nav">
+                <span type="button" class="bg-black text-white h-100 px-3 py-2 d-block d-sm-none" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="menu" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5> -->
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav col-12 col-md-auto d-flex flex-column mobile-menu">
+                            <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
+                            <li><a href="#" class="nav-link px-2 link-dark">PAGES</a></li>
+                            <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-2 dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="col-md-3 top-icons d-flex gap-3 px-2 py-3">
+                            <a class="position-relative mobile-icon">
+                                <i class="fa-solid fa-heart text-dark"></i> <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                            <a href="javascript:void(0)" class="position-relative mobile-icon" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fa-sharp fa-solid fa-bag-shopping text-dark"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                            <span class="text-dark"><strong>items:</strong> $150</span>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
                 <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark">PAGES</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
@@ -64,7 +117,7 @@
                 </li>
             </ul>
 
-            <div class="col-md-3 text-end top-icons d-flex justify-content-end gap-3">
+            <div class="col-md-3 text-end top-icons d-flex justify-content-end gap-3 d-none d-md-flex">
                 <a class="position-relative">
                     <i class="fa-solid fa-heart text-dark"></i> <span
                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -72,7 +125,6 @@
                         <span class="visually-hidden">unread messages</span>
                     </span>
                 </a>
-                <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
                 <a href="javascript:void(0)" class="position-relative" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <i class="fa-sharp fa-solid fa-bag-shopping text-dark"></i>
@@ -202,7 +254,7 @@
         <div class="row">
             <!-- Sidebar Menu  -->
             <div class="col-md-3">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion d-none d-sm-block" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item rounded-0">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                             <span class="accordion-button bg-dark  text-white rounded-0 border-0 all-categories-btn"
@@ -271,28 +323,91 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- Top Slider  -->
             <div class="col-md-9">
-                <div class="row mb-3">
-                    <div class="col-md-12">
-                        <div class="input-group mb-3 rounded-0 h-100">
-                            <button class="btn btn-outline-dark dropdown-toggle rounded-0 border" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                            <input type="text" class="form-control rounded-0" placeholder="Search Term.."
-                                aria-label="Text input with dropdown button">
-                            <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark">Search</span>
-                        </div>
+                <div class="d-flex mb-3">
+                    <div class="bg-black text-white h-100 px-3 py-2 d-block d-sm-none">
+                        <span type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="sidebar">
+                                    <ul class="nav flex-column" id="nav_accordion">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="fa-solid fa-tv"></i>
+                                                <span>TV</span></a>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-stopwatch"></i>
+                                                <span>Watches</span></a>
+                                            <ul class="submenu collapse">
+                                                <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-gamepad"></i>
+                                                <span>Game</span> </a>
+                                            <ul class="submenu collapse">
+                                                <li><a class="nav-link" href="#">Submenu item 4 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 5 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 7 </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i
+                                                    class="fa-solid fa-camera"></i><span>Camera</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i
+                                                    class="fa-solid fa-screwdriver-wrench"></i><span>Accessories</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i
+                                                    class="fa-solid fa-headphones"></i><span>Audio</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i
+                                                    class="fa-solid fa-couch"></i><span>Furnitures</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i
+                                                    class="fa-solid fa-shirt"></i><span>Cloth</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i
+                                                    class="fa-solid fa-kitchen-set"></i><span>Kitchen</span> </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="input-group mb-3 rounded-0 h-100">
+                        <button class="btn btn-outline-dark dropdown-toggle rounded-0 border" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                        <input type="text" class="form-control rounded-0" placeholder="Search Term.."
+                            aria-label="Text input with dropdown button">
+                        <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark">Search</span>
                     </div>
                     <!-- <div class="col-md-4">other info</div> -->
                 </div>
@@ -353,8 +468,6 @@
     </section>
 
 
-
-
     <!-- Categories Card Slider  -->
     <section class="container mb6rem">
         <div class="owl-carousel category-slider">
@@ -388,79 +501,236 @@
         <h2 class="text-center mb-4">Featured Products</h2>
         <div class="row g-4 featured-products">
             <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
                         <h5 class="card-title">Product Name</h5>
                         <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text">$50.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text">$50.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text">$50.00</p>
-                    </div>
+
                 </div>
             </div>
 
             <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
                         <h5 class="card-title">Product Name</h5>
                         <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text">$50.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text">$50.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0">
-                    <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text">$50.00</p>
-                    </div>
+
                 </div>
             </div>
 
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -535,10 +805,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -553,10 +823,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -571,10 +841,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -591,10 +861,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -609,10 +879,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -627,10 +897,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -655,10 +925,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -673,10 +943,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -691,10 +961,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -719,10 +989,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -737,10 +1007,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -755,10 +1025,10 @@
                                     <div>Product Title</div>
                                     <div>Price: $25</div>
                                     <div>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
                                 </div>
@@ -770,6 +1040,36 @@
         </div>
     </div>
 
+    <!-- Brand Logos  -->
+    <div class="container mb6rem">
+        <h2 class="text-center mb-4">Top Brands</h2>
+        <div class="owl-carousel brand-carousel owl-theme">
+            <div class="item">
+                <img src="./images/brands/1.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/2.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/3.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/4.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/5.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/1.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/2.png">
+            </div>
+            <div class="item">
+                <img src="./images/brands/3.png">
+            </div>
+        </div>
+    </div>
 
 
     <!-- Lates 3 Blogs  -->
@@ -917,6 +1217,7 @@
     <script src="./scripts/script.js"></script>
 
     <script>
+        'use strict'
         $(document).ready(function () {
             $(".category-slider").owlCarousel({
                 items: 4,
@@ -928,6 +1229,15 @@
                 nav: true,
                 navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
             });
+
+            $(".brand-carousel").owlCarousel({
+                items: 6,
+                nav: false,
+                dots: false,
+                margin: 10,
+                autoplay: true,
+                navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
+            })
 
             $(".vertical-carousel").owlCarousel({
                 items: 1,
