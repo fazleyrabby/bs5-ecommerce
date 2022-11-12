@@ -1,10 +1,8 @@
-
-
-
 body{
     font-family: 'Poppins', sans-serif;
 }
-.container{
+
+.mb3rem{
     margin-bottom: 3rem;
 }
 .top-carousel{
@@ -21,6 +19,19 @@ body{
 .top-carousel .carousel-inner .carousel-item .carousel-caption{
     /* color: #cecece; */
 }
+.carousel-item
+{
+    position: relative;
+}
+.bg-faded{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #111;
+}
 .sidebar li .submenu{ 
 	list-style: none; 
 	margin: 0; 
@@ -33,8 +44,12 @@ body{
     color: var(--bs-dark);
     padding: 0.7rem;
 }
+.sidebar .nav-link i{
+    width: 20px;
+    margin: 0 10px;
+}
 .sidebar ul li:not(:last-child) {
-    border-bottom: 0.1px solid #f5f5f5;
+    border-bottom: 0.1px solid #dcdbdb;
 }
 .sidebar .nav-link:hover {
     color: var(--bs-primary);
@@ -51,21 +66,21 @@ body{
     object-position: top;
 }
 
-.category-slider .owl-item.active:not(:last-child){
+/* .category-slider .owl-item.active:not(:last-child){
     padding-right: 10px;
-}
+} */
 
 
-.category-slider div{
+/* .category-slider div{
     position: relative;
     overflow: hidden;
-}
+} */
 
 .category-title {
     position: absolute;
     bottom: .5rem;
     left: calc(50% + 10px);
-    background-color: #fcf2f2;
+    /* background-color: #fcf2f2; */
     transform: translate(-50%, -50%);
     padding: 10px 25px;
 }
@@ -74,4 +89,50 @@ body{
     height: 220px;
     width: 100%;
     object-fit: cover;
+}
+
+.category-slider .owl-nav .vertical-nav-left,
+.category-slider .owl-nav .vertical-nav-right,
+.vertical-carousel .owl-nav .vertical-nav-left,
+.vertical-carousel .owl-nav .vertical-nav-right
+{
+    background: #fff !important;
+    padding: 15px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.category-slider:hover .owl-nav .vertical-nav-left,
+.category-slider:hover .owl-nav .vertical-nav-right,
+.vertical-carousel:hover .owl-nav .vertical-nav-left,
+.vertical-carousel:hover .owl-nav .vertical-nav-right{
+    opacity: 1;
+}
+
+.category-slider .owl-nav .vertical-nav-left,
+.vertical-carousel .owl-nav .vertical-nav-left{
+    left: 5px;
+}
+
+.category-slider .owl-nav .vertical-nav-right,
+.vertical-carousel .owl-nav .vertical-nav-right{
+    right: 5px;
+}
+
+.all-categories-btn::after
+{
+    background-image: none !important;
+    content: "\f107";
+    font-family: FontAwesome;
+}
+
+.all-categories-btn:not(.collapsed)::after{
+    transform: none;
+}
+
+.footer-bg{
+    background: #faf5f5;
 }

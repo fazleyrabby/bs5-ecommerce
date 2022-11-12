@@ -24,32 +24,34 @@
     <nav class="py-2 bg-light border-bottom">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active"
-                        aria-current="page"><small>hello@test.com</small></a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><small>Free Shipping for all Order of
-                            $99</small></a></li>
+                <a href="#" class="nav-link link-dark active p-0 me-2"
+                    aria-current="page"><small>hello@test.com</small></a>
+                <a href="#" class="nav-link link-dark p-0">
+                    <small>Free Shipping for all Order of
+                        $99</small></a>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-user"></i>
+                <li class="nav-item"><a href="#" class="nav-link link-dark p-0"><i class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Navbar -->
-    <div class="container">
+    <section class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 RH-Ecommerce
             </a>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+                <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">PAGES</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Dropdown
+                        SHOP
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -64,14 +66,14 @@
 
             <div class="col-md-3 text-end top-icons d-flex justify-content-end gap-3">
                 <a class="position-relative">
-                    <i class="fa-solid fa-heart"></i> <span
+                    <i class="fa-solid fa-heart text-dark"></i> <span
                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         3
                         <span class="visually-hidden">unread messages</span>
                     </span>
                 </a>
                 <a class="position-relative">
-                    <i class="fa-sharp fa-solid fa-bag-shopping"></i><span
+                    <i class="fa-sharp fa-solid fa-bag-shopping text-dark"></i><span
                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         1
                         <span class="visually-hidden">unread messages</span>
@@ -80,22 +82,23 @@
                 <span><strong>items:</strong> $150</span>
             </div>
         </header>
-    </div>
+    </section>
 
 
+    <!-- Hero section -->
 
-    <div class="container">
+    <section class="container mb3rem">
         <div class="row">
             <!-- Sidebar Menu  -->
             <div class="col-md-3">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item rounded-0">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button bg-info text-white rounded-0 border-0" type="button"
+                            <span class="accordion-button bg-dark  text-white rounded-0 border-0 all-categories-btn" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
                                 aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                 <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;All Categories
-                            </button>
+                            </span>
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show rounded-0"
                             aria-labelledby="panelsStayOpen-headingOne">
@@ -103,10 +106,13 @@
                                 <nav class="sidebar">
                                     <ul class="nav flex-column" id="nav_accordion">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Link name </a>
+                                            <a class="nav-link" href="#">
+                                                <i class="fa-solid fa-tv"></i>
+                                                <span>TV</span></a>
                                         </li>
                                         <li class="nav-item has-submenu">
-                                            <a class="nav-link" href="#"> Submenu links </a>
+                                            <a class="nav-link" href="#">  <i class="fa-solid fa-stopwatch"></i>
+                                                <span>Watches</span> </a> </a>
                                             <ul class="submenu collapse">
                                                 <li><a class="nav-link" href="#">Submenu item 1 </a></li>
                                                 <li><a class="nav-link" href="#">Submenu item 2 </a></li>
@@ -114,7 +120,7 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item has-submenu">
-                                            <a class="nav-link" href="#"> More menus </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-gamepad"></i> <span>Game</span> </a>
                                             <ul class="submenu collapse">
                                                 <li><a class="nav-link" href="#">Submenu item 4 </a></li>
                                                 <li><a class="nav-link" href="#">Submenu item 5 </a></li>
@@ -123,22 +129,22 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Something </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-camera"></i><span>Camera</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Other link </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-screwdriver-wrench"></i><span>Accessories</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Something </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-headphones"></i><span>Audio</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Something </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-couch"></i><span>Furnitures</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Something </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-shirt"></i><span>Cloth</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> Something </a>
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-kitchen-set"></i><span>Kitchen</span> </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -153,7 +159,7 @@
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <div class="input-group mb-3 rounded-0 h-100">
-                            <button class="btn btn-outline-secondary dropdown-toggle rounded-0 border" type="button"
+                            <button class="btn btn-outline-dark dropdown-toggle rounded-0 border" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -166,7 +172,7 @@
                             </ul>
                             <input type="text" class="form-control rounded-0" placeholder="Search Term.."
                                 aria-label="Text input with dropdown button">
-                            <span class="input-group-text btn btn-success rounded-0 d-flex">Search</span>
+                            <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark">Search</span>
                         </div>
                     </div>
                     <!-- <div class="col-md-4">other info</div> -->
@@ -185,23 +191,29 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="./images/1.jpg" class="d-block w-100" alt="1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
+                                <div class="bg-faded"></div>
+                                <div class="carousel-caption d-none d-md-block text-start text-white p-2">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-md btn-dark rounded-0" href="#">View</a></p>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img src="./images/2.jpg" class="d-block w-100" alt="2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
+                                <div class="bg-faded"></div>
+                                <div class="carousel-caption d-none d-md-block text-start text-white p-2">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-md btn-dark rounded-0" href="#">View</a></p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="./images/3.jpg" class="d-block w-100" alt="3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                <div class="bg-faded"></div>
+                                <div class="carousel-caption d-none d-md-block text-start text-white p-2">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-md btn-dark rounded-0" href="#">View</a></p>
                                 </div>
                             </div>
                         </div>
@@ -219,33 +231,41 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
 
     <!-- Categories Card Slider  -->
-    <div class="container">
+    <section class="container mb3rem">
         <div class="owl-carousel category-slider">
-            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    1</span></div>
-            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    2</span></div>
-            <div> <img src="./images/3.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    3</span></div>
-            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    4</span></div>
-            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    5</span></div>
-            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    6</span></div>
-            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <span class="category-title">Category
-                    7</span></div>
+            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    1</a></div>
+            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    2</a></div>
+            <div> <img src="./images/3.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    3</a></div>
+            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    4</a></div>
+            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    5</a></div>
+            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    6</a></div>
+            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    7</a></div>
         </div>
-    </div>
+    </section>
+
 
     <!-- Featured Products  -->
-    <div class="container">
+    <section class="container mb3rem">
         <h2 class="text-center mb-4">Featured Products</h2>
         <div class="row g-4 featured-products">
             <div class="col-md-3">
@@ -323,82 +343,345 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 
 
     <!-- Flash Sales  -->
-
+    <!-- two column layout  -->
 
     <!-- 3 column layout of different type of products  -->
+    <div class="container mb3rem">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h4>Latest Products</h4>
+                    <a href="#">View All</a>
+                </div>
+                <div class="owl-carousel vertical-carousel">
+                    <div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h4>Top Products</h4>
+                    <a href="#">View All</a>
+                </div>
+                <div class="owl-carousel vertical-carousel">
+                    <div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h4>On Sale Products</h4>
+                    <a href="#">View All</a>
+                </div>
+                <div class="owl-carousel vertical-carousel">
+                    <div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Lates 3 Blogs  -->
 
-    <!-- Mega footer  -->
-    <div class="container">
-        <footer>
-          <div class="row">
-            <div class="col-6 col-md-3 mb-3">
-                <!-- <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19"> -->
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2">Address: 60-49 Road 11378 New York</li>
-                    <li class="nav-item mb-2">Phone: +000000000</li>
-                    <li class="nav-item mb-2">Email: hello@test.com</li>
-                  </ul>
 
-                  <small class="d-block mb-3 text-muted">© 2017–2022</small>
-                
-                
-                
-                
-              </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-4 offset-md-1 mb-3">
-              <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="button">Subscribe</button>
+    <!-- Mega footer  -->
+    <div class="footer-bg pt-4">
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-3">
+                        <!-- <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19"> -->
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Address: 60-49 Road 11378 New York</li>
+                            <li class="nav-item mb-2">Phone: +000000000</li>
+                            <li class="nav-item mb-2">Email: hello@test.com</li>
+                        </ul>
+    
+                        <small class="d-block mb-3 text-muted">© 2017–2022</small>
+    
+    
+    
+    
+                    </div>
+    
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-4 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
-            </div>
-          </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-            <p>© 2022 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            </ul>
-          </div>
-        </footer>
-      </div>
+    
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+                    <p>© 2022 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
 
     <!-- Footer bottom section  -->
 
@@ -417,14 +700,26 @@
 
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $(".category-slider").owlCarousel({
                 items: 4,
                 loop: true,
+                margin:10,
+                dots: false,
                 autoplay: true,
                 autoplayHoverPause: true,
-                // nav:true,
+                nav:true,
+                navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
+            });
+
+            $(".vertical-carousel").owlCarousel({
+                items: 1,
+                nav:true,
+                dots: false,
+                navText: ["<i class='fa fa-angle-left vertical-nav-left'></i>", "<i class='fa fa-angle-right vertical-nav-right'></i>"]
             });
         });
+
+
     </script>
 </body>
 
