@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
     <link href="./plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
 
-    <title>Bootstrap demo</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -31,7 +30,7 @@
                         $99</small></a>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-dark p-0"><i class="fa-solid fa-user"></i>
+                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
@@ -40,8 +39,9 @@
     <!-- Navbar -->
     <section class="container">
         <header id="navbar_top" class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4">
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                RH-Ecommerce
+            <a href="/" class="d-flex align-items-center col-md-3 text-dark text-decoration-none">
+                <!-- RH-Ecommerce -->
+                <img class="d-block" src="./images/logo/logo.svg" alt="logoipsum">
             </a>
 
             <div class="mobile-nav d-block d-md-none">
@@ -242,7 +242,7 @@
                         </tr>
                     </table>
                     <div class="d-flex gap-2 p-3">
-                        <a href="/view-cart.html" class="btn btn-outline-success w-100 py-3">View Cart</a>
+                        <a href="/cart.html" class="btn btn-outline-success w-100 py-3">View Cart</a>
                         <a href="/checkout.html" class="btn btn-dark w-100 py-3">Checkout</a>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body p-0 rounded-0">
                                 <nav class="sidebar">
-                                    <ul class="nav flex-column" id="nav_accordion">
+                                    <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
                                                 <i class="fa-solid fa-tv"></i>
@@ -279,22 +279,13 @@
                                         <li class="nav-item has-submenu">
                                             <a class="nav-link" href="#"><i class="fa-solid fa-stopwatch"></i>
                                                 <span>Watches</span></a>
-                                            <ul class="submenu collapse">
+                                            <ul class="submenu dropdown-menu">
                                                 <li><a class="nav-link" href="#">Submenu item 1 </a></li>
                                                 <li><a class="nav-link" href="#">Submenu item 2 </a></li>
                                                 <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item has-submenu">
-                                            <a class="nav-link" href="#"> <i class="fa-solid fa-gamepad"></i>
-                                                <span>Game</span> </a>
-                                            <ul class="submenu collapse">
-                                                <li><a class="nav-link" href="#">Submenu item 4 </a></li>
-                                                <li><a class="nav-link" href="#">Submenu item 5 </a></li>
-                                                <li><a class="nav-link" href="#">Submenu item 6 </a></li>
-                                                <li><a class="nav-link" href="#">Submenu item 7 </a></li>
-                                            </ul>
-                                        </li>
+
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"> <i
                                                     class="fa-solid fa-camera"></i><span>Camera</span> </a>
@@ -320,8 +311,9 @@
                                             <a class="nav-link" href="#"> <i
                                                     class="fa-solid fa-kitchen-set"></i><span>Kitchen</span> </a>
                                         </li>
+                                        
                                     </ul>
-                                </nav>
+                                    </nav>
                             </div>
                         </div>
                     </div>
@@ -1228,8 +1220,6 @@
         $(document).ready(function () {
             
         });
-
-
     </script>
 </body>
 
