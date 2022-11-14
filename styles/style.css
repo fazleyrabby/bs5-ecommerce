@@ -1,7 +1,13 @@
+/* reset bootstrap  */
+:root{
+    --bs-nav-link-font-size: 0.93rem;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
 
+/* custom utility classes  */
 .mb3rem {
     margin-bottom: 3rem;
 }
@@ -10,6 +16,42 @@ body {
     margin-bottom: 6rem;
 }
 
+.bg-faded {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #111;
+}
+
+.product-badge{
+    position:absolute; 
+    z-index: 1; 
+    top: 5px; 
+    left: 5px;
+}
+
+/* header  */
+
+header.fixed-top {
+    background: #111;
+    color: #fff !important;
+    padding: 0 2rem;
+}
+
+header.fixed-top ul:not(.mobile-menu)>li>a:not(.dropdown-item),
+header.fixed-top>a:not(.mobile-icon),
+header.fixed-top a:not(.mobile-icon) i {
+    color: #fff !important;
+}
+
+.top-icons i {
+    font-size: 1.6rem;
+}
+
+/* hero section  */
 .top-carousel {
     height: 400px;
 }
@@ -24,34 +66,10 @@ body {
     height: 400px;
 }
 
-/* .top-carousel .carousel-inner .carousel-item .carousel-caption{
-    color: #cecece;
-} */
 .carousel-item {
     position: relative;
 }
 
-.bg-faded {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0.3;
-    background-color: #111;
-}
-
-header.fixed-top {
-    background: #111;
-    color: #fff !important;
-    padding: 0 2rem;
-}
-
-header.fixed-top ul:not(.mobile-menu)>li>a:not(.dropdown-item),
-header.fixed-top>a:not(.mobile-icon),
-header.fixed-top a:not(.mobile-icon) i {
-    color: #fff !important;
-}
 
 .search-bar {
     height: 3.5rem;
@@ -89,6 +107,16 @@ header.fixed-top a:not(.mobile-icon) i {
     color: var(--bs-primary);
 }
 
+.all-categories-btn::after {
+    background-image: none !important;
+    content: "\f107";
+    font-family: FontAwesome;
+}
+
+.all-categories-btn:not(.collapsed)::after {
+    transform: none;
+}
+
 .has-submenu .nav-link {
     position: relative;
 }
@@ -100,10 +128,7 @@ header.fixed-top a:not(.mobile-icon) i {
     right: 4%;
 }
 
-.top-icons i {
-    font-size: 1.6rem;
-}
-
+/* category slider  */
 .category-slider div img {
     height: 300px;
     width: 300px;
@@ -111,41 +136,16 @@ header.fixed-top a:not(.mobile-icon) i {
     object-position: top;
 }
 
-/* .category-slider .owl-item.active:not(:last-child){
-    padding-right: 10px;
-} */
-
-
-/* .category-slider div{
-    position: relative;
-    overflow: hidden;
-} */
 
 .category-title {
     position: absolute;
     bottom: .5rem;
     left: calc(50% + 10px);
-    /* background-color: #fcf2f2; */
     transform: translate(-50%, -50%);
     padding: 10px 25px;
 }
 
-.featured-products img {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.brand-carousel .item {
-    height: 200px;
-}
-
-.brand-carousel .item img {
-    width: 120px;
-    height: 100%;
-    object-fit: contain;
-}
-
+/* category and vertical carousel custom css  */
 .category-slider .owl-nav .vertical-nav-left,
 .category-slider .owl-nav .vertical-nav-right,
 .vertical-carousel .owl-nav .vertical-nav-left,
@@ -177,15 +177,7 @@ header.fixed-top a:not(.mobile-icon) i {
     right: 5px;
 }
 
-.all-categories-btn::after {
-    background-image: none !important;
-    content: "\f107";
-    font-family: FontAwesome;
-}
 
-.all-categories-btn:not(.collapsed)::after {
-    transform: none;
-}
 
 /* .product-card-actions{
     height: 100%;
@@ -193,6 +185,14 @@ header.fixed-top a:not(.mobile-icon) i {
     background: #111;
     opacity: 0.5;
 } */
+
+/* featured products  */
+
+.featured-products img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
 .product-action-container {
     cursor: pointer;
     opacity: 0;
@@ -216,13 +216,43 @@ header.fixed-top a:not(.mobile-icon) i {
     background-size: cover;
 }
 
-.blogs .card img {
+.flash-sale-counter-title{
+    font-size: 10px;
+}
+
+/* brand carousel  */
+.brand-carousel .item {
     height: 200px;
+}
+
+.brand-carousel .item img {
+    width: 120px;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* blogs  */
+.blogs .card img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
+.blogs div .card-img-top{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.blogs div .card-img-top img{
+    transition: all 200ms ease;
+    
+}
+.blogs div:hover .card-img-top img{
+    scale: 1.15;
+}
+
+/* cart sidebar  */
 .cart-calculation table td,
 .cart-calculation table th {
     padding: 1rem;
@@ -241,6 +271,7 @@ header.fixed-top a:not(.mobile-icon) i {
     overflow-y: scroll;
 }
 
+/* footer  */
 .footer-bg {
     background: #faf5f5;
 }

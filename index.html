@@ -501,6 +501,7 @@
         <div class="row g-4 featured-products">
             <div class="col-md-3">
                 <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-danger border product-badge">New</span>
                     <div class="position-relative">
                         <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
                         <div class="product-action-container">
@@ -530,6 +531,7 @@
 
             <div class="col-md-3">
                 <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-warning border product-badge text-dark">Top</span>
                     <div class="position-relative">
                         <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
                         <div class="product-action-container">
@@ -617,6 +619,7 @@
 
             <div class="col-md-3">
                 <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-primary border product-badge">Hot</span>
                     <div class="position-relative">
                         <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
                         <div class="product-action-container">
@@ -743,19 +746,55 @@
             <div class="col-md-6">
                 <div
                     class="row g-0 border overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative rounded-0">
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="flash-sales-image" style="background-image: url('./images/3.jpg');" width="200"
-                            height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                    <div class="col-5 d-none d-lg-block">
+                        <svg class="flash-sales-image" style="background-image: url('./images/3.jpg');" width="100%"
+                            height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
                             aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
                         </svg>
                     </div>
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">Product 1</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">View Details</a>
+                        <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                        <span class="badge bg-danger border product-badge">New</span>
+                        <p class="card-text"><span class="text-danger me-2">$79.00</span><small class="me-1"><del class="text-muted">$129.00</del></small><small class="text-success">-30% off</small></p>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="d-flex justify-content-between">
+                            <span>Already Sold: 5</span>
+                            <span>Available: 10</span>
+                        </p>
+                        <div class="d-flex gap-1 text-center flash-sale-counter">
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">15</h4>
+                                    <small class="flash-sale-counter-title">Days</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">00</h4>
+                                    <small class="flash-sale-counter-title">Hours</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">41</h4>
+                                    <small class="flash-sale-counter-title">Minutes</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">35</h4>
+                                    <small class="flash-sale-counter-title">Seconds</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -763,9 +802,9 @@
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="flash-sales-image" style="background-image: url('./images/2.jpg');" width="200"
-                            height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                    <div class="col-5 d-none d-lg-block">
+                        <svg class="flash-sales-image" style="background-image: url('./images/2.jpg');" width="100%"
+                            height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
                             aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
                         </svg>
@@ -774,10 +813,44 @@
                     <div class="col p-4 d-flex flex-column position-static">
                         <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
                         <h3 class="mb-0">Product 2</h3>
-                        <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <a href="#" class="stretched-link">View Details</a>
+                        <p class="card-text"><span class="text-danger me-2">$44.00</span><small class="me-1"><del class="text-muted">$80.00</del></small><small class="text-success">-30% off</small></p>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="d-flex justify-content-between">
+                            <span>Already Sold: 4</span>
+                            <span>Available: 11</span>
+                        </p>
+                        <div class="d-flex gap-1 text-center flash-sale-counter">
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">15</h4>
+                                    <small class="flash-sale-counter-title">Days</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">00</h4>
+                                    <small class="flash-sale-counter-title">Hours</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">41</h4>
+                                    <small class="flash-sale-counter-title">Minutes</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">35</h4>
+                                    <small class="flash-sale-counter-title">Seconds</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -1077,7 +1150,9 @@
         <div class="row align-items-md-stretch blogs">
             <div class="col-md-4">
                 <div class="card rounded-0 shadow-sm border-0">
-                    <img src="./images/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-top">
+                        <img src="./images/2.jpg"  alt="...">
+                    </div>
                     <div class="card-body">
                         <small>
                             <span><i class="fa-regular fa-calendar"></i></span>
@@ -1093,7 +1168,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card rounded-0 shadow-sm border-0">
-                    <img src="./images/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-top">
+                        <img src="./images/3.jpg"  alt="...">
+                    </div>
                     <div class="card-body">
                         <small>
                             <span><i class="fa-regular fa-calendar"></i></span>
@@ -1108,7 +1185,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card rounded-0 shadow-sm border-0">
-                    <img src="./images/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-top">
+                        <img src="./images/2.jpg"  alt="...">
+                    </div>
                     <div class="card-body">
                         <small>
                             <span><i class="fa-regular fa-calendar"></i></span>
