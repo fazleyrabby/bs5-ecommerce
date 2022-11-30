@@ -445,18 +445,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="item1">
                     <td scope="row"><img src="./images/1.jpg" width="100"></td>
                     <td>Headphone</td>
                     <td>$115</td>
                     <td class="p-0 vertical-middle">
                         <div class="input-group mb-3">
-                            <button class="btn btn-outline-danger decrement rounded-0" data-id="quantity1"
+                            <button class="btn btn-outline-danger decrement rounded-0" data-id="1"
                                 type="button">-</button>
                             <input type="text" id="quantity1" class="form-control" value="1" min="1" placeholder=""
                                 aria-label="Example text with two button addons">
                             <button class="btn btn-outline-success increment rounded-0" type="button"
-                                data-id="quantity1">+</button>
+                                data-id="1">+</button>
                         </div>
                     </td>
                     <td class="text-center">1</td>
@@ -464,17 +464,17 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr id="item2">
                     <td scope="row"><img src="./images/4.jpg" width="100"></td>
                     <td>Shoe</td>
                     <td>$75</td>
                     <td class="p-0 vertical-middle">
-                        <div class="input-group mb-3 quantity">
-                            <button class="btn btn-outline-danger decrement rounded-0" data-id="quantity2"
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-danger decrement rounded-0" data-id="2"
                                 type="button">-</button>
                             <input type="text" id="quantity2" class="form-control" value="1" min="1" placeholder=""
                                 aria-label="Example text with two button addons">
-                            <button class="btn btn-outline-success increment rounded-0" data-id="quantity2"
+                            <button class="btn btn-outline-success increment rounded-0" data-id="2"
                                 type="button">+</button>
                         </div>
                     </td>
@@ -732,23 +732,21 @@
     <script>
         'use strict'
         $(document).ready(function () {
-            // document.querySelectorAll('.quantity').forEach((each) => {
-            //     console.log(each.closest('.increment'))
-            // })
             let inc = document.querySelectorAll('.increment');
             let dec = document.querySelectorAll('.decrement');
 
             inc.forEach(function (each) {
                 each.addEventListener('click', function () {
-                    let input = document.getElementById(`${this.dataset.id}`);
+                    let input = document.getElementById(`quantity${this.dataset.id}`);
                     input.value = parseInt(input.value)+1
                 })
             })
 
-            dec.forEach(function (each) {
+            dec.forEach(function (each, key) {
                 each.addEventListener('click', function () {
-                    let input = document.getElementById(`${this.dataset.id}`);
-                    input.value = parseInt(input.value)-1 > 0 ? parseInt(input.value)-1 : 0
+                    let input = document.getElementById(`quantity${this.dataset.id}`);
+                    let tr = document.getElementById(`item${this.dataset.id}`);
+                    input.value = parseInt(input.value)-1 > 0 ? parseInt(input.value)-1 : tr.parentNode.removeChild(tr);
                 })
             })
 
