@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
     <link href="./plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
 
@@ -30,7 +30,8 @@
                         $99</small></a>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i class="fa-solid fa-user"></i>
+                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i
+                            class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
@@ -77,7 +78,7 @@
                         </ul>
 
                         <div class="col-md-3 top-icons d-flex gap-3 px-2 py-3">
-                            <a class="position-relative mobile-icon">
+                            <a class="position-relative mobile-icon" href="./wishlist.html">
                                 <i class="fa-solid fa-heart text-dark"></i> <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     3
@@ -121,7 +122,7 @@
             </ul>
 
             <div class="col-md-3 text-end top-icons d-flex justify-content-end gap-3 d-none d-md-flex">
-                <a class="position-relative">
+                <a class="position-relative" href="./wishlist.html">
                     <i class="fa-solid fa-heart text-dark"></i> <span
                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         3
@@ -252,8 +253,8 @@
     </div>
 
 
-    <!-- Hero section -->
-    <section class="container mb6rem">
+    <!-- nav section -->
+    <section class="container">
         <div class="row">
             <!-- Sidebar Menu  -->
             <div class="col-md-3">
@@ -266,7 +267,8 @@
                                 <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;All Categories
                             </span>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse rounded-0 absolute-category"
+                        <div id="panelsStayOpen-collapseOne"
+                            class="accordion-collapse collapse rounded-0 absolute-category"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body p-0 rounded-0">
                                 <nav class="sidebar">
@@ -311,9 +313,9 @@
                                             <a class="nav-link" href="#"> <i
                                                     class="fa-solid fa-kitchen-set"></i><span>Kitchen</span> </a>
                                         </li>
-                                        
+
                                     </ul>
-                                    </nav>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -323,7 +325,9 @@
             <div class="col-md-9">
                 <div class="d-flex mb-3">
                     <div class="d-flex d-md-none">
-                        <span class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center" type="button" type="button" data-bs-toggle="offcanvas"
+                        <span
+                            class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center"
+                            type="button" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                             <i class="fa-solid fa-bars"></i>
                         </span>
@@ -414,7 +418,226 @@
         </div>
     </section>
 
+    <section class="bg-light">
+        <div class="container py-4 d-flex align-items-center">
+            <div class="row">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;); float: right;"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
 
+    <section class="container mb-5">
+        <table class="table cart-table">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col" width="10%">Quantity</th>
+                    <th scope="col" width="10%" class="text-center">Total</th>
+                    <th scope="col" class="text-center">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row"><img src="./images/1.jpg" width="100"></td>
+                    <td>Headphone</td>
+                    <td>$115</td>
+                    <td class="p-0 vertical-middle">
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-danger decrement rounded-0" data-id="quantity1"
+                                type="button">-</button>
+                            <input type="text" id="quantity1" class="form-control" value="1" min="1" placeholder=""
+                                aria-label="Example text with two button addons">
+                            <button class="btn btn-outline-success increment rounded-0" type="button"
+                                data-id="quantity1">+</button>
+                        </div>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td scope="row"><img src="./images/4.jpg" width="100"></td>
+                    <td>Shoe</td>
+                    <td>$75</td>
+                    <td class="p-0 vertical-middle">
+                        <div class="input-group mb-3 quantity">
+                            <button class="btn btn-outline-danger decrement rounded-0" data-id="quantity2"
+                                type="button">-</button>
+                            <input type="text" id="quantity2" class="form-control" value="1" min="1" placeholder=""
+                                aria-label="Example text with two button addons">
+                            <button class="btn btn-outline-success increment rounded-0" data-id="quantity2"
+                                type="button">+</button>
+                        </div>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="container mb3rem">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Cart Totals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subtotal: $185</td>
+                    </tr>
+                    <tr>
+                        <td>Tax: $15</td>
+                    </tr>
+                    <tr>
+                        <td>Total (Shipping Included) $210</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="btn btn-success rounded-0" href="./checkout.html">Checkout</a>
+        </div>
+    </section>
+
+
+    <!-- similar products  -->
+
+    <section class="container mb6rem">
+        <h2 class="text-center mb-4">Similar Products</h2>
+        <div class="row g-4 featured-products">
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-danger border product-badge">New</span>
+                    <div class="position-relative">
+                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-warning border product-badge text-dark">Top</span>
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
     <!-- Mega footer  -->
     <div class="footer-bg pt-4">
@@ -509,7 +732,26 @@
     <script>
         'use strict'
         $(document).ready(function () {
-            
+            // document.querySelectorAll('.quantity').forEach((each) => {
+            //     console.log(each.closest('.increment'))
+            // })
+            let inc = document.querySelectorAll('.increment');
+            let dec = document.querySelectorAll('.decrement');
+
+            inc.forEach(function (each) {
+                each.addEventListener('click', function () {
+                    let input = document.getElementById(`${this.dataset.id}`);
+                    input.value = parseInt(input.value)+1
+                })
+            })
+
+            dec.forEach(function (each) {
+                each.addEventListener('click', function () {
+                    let input = document.getElementById(`${this.dataset.id}`);
+                    input.value = parseInt(input.value)-1 > 0 ? parseInt(input.value)-1 : 0
+                })
+            })
+
         });
     </script>
 </body>

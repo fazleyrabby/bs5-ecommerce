@@ -8,6 +8,13 @@ body {
 }
 
 /* custom utility classes  */
+.vertical-middle{
+    vertical-align: middle;
+}
+.mb2rem {
+    margin-bottom: 3rem;
+}
+
 .mb3rem {
     margin-bottom: 3rem;
 }
@@ -286,7 +293,10 @@ header.fixed-top a:not(.mobile-icon) i {
     background: #fff;
 }
 
-
+.cart-table td,
+.cart-table th{
+    padding: 1.1rem;
+}
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
