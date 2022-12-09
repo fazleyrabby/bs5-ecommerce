@@ -95,6 +95,7 @@ header.fixed-top a:not(.mobile-icon) i {
     padding-right: 1rem;
 }
 
+
 .sidebar .nav-link {
     font-weight: 500;
     color: var(--bs-dark);
@@ -291,6 +292,7 @@ header.fixed-top a:not(.mobile-icon) i {
     width: 304px;
     border: 0.2px solid #cecece;
     background: #fff;
+    z-index: 999;
 }
 
 .cart-table td,
