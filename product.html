@@ -30,8 +30,7 @@
                         $99</small></a>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i
-                            class="fa-solid fa-user"></i>
+                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
@@ -438,7 +437,9 @@
             <div class="row">
                 <aside class="col-lg-6">
                     <article class="gallery-wrap">
-                        <div class="img-big-wrap img-thumbnail"> <a href="#"> <img src="./images/1.jpg"> </a> </div>
+                        <div class="img-big-wrap img-thumbnail"> <a href="#"> <div style="background-image: url('./images/1.jpg');">
+                        <img src="./images/1.jpg" alt="">
+                        </div> </a> </div>
                         <!-- img-big-wrap.// -->
                         <div class="thumbs-wrap"> <a href="#" class="item-thumb">
                                 <img src="./images/1.jpg"></a>
@@ -763,7 +764,32 @@
     <script>
         'use strict'
         $(document).ready(function () {
+            const items = document.querySelectorAll('.item-thumb');
+            const thumbnail = document.querySelector('.img-thumbnail a div');
+            thumbnail.addEventListener('mousemove', function(e){
+                zoom(e);
+            })
+            items.forEach(function(each){
+                each.addEventListener('click', function(e){
+                    e.preventDefault()
+                    let image = each.children[0].getAttribute('src');
+                    thumbnail.style.backgroundImage = `url(${image})`
+                    thumbnail.children[0].setAttribute('src', image)
+                })
+            })
         });
+
+        function zoom(e){
+            var zoomer = e.currentTarget;
+            let offsetX = 0;
+            let offsetY = 0;
+            e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+            e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+            let x = offsetX/zoomer.offsetWidth*100
+            let y = offsetY/zoomer.offsetHeight*100
+            zoomer.style.backgroundPosition = `${x}% ${y}%`;
+            zoomer.style.backgroundSize = "175%";
+        }
     </script>
 </body>
 

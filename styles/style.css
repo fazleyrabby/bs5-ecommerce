@@ -299,12 +299,30 @@ header.fixed-top a:not(.mobile-icon) i {
 }
 
 /* product page  */
-
-.img-big-wrap img{
+.img-thumbnail a div {
     width: 100%;
-    object-fit: contain;
     height: 400px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+    cursor: zoom-in;    
 }
+
+.img-big-wrap a div img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+
+.img-big-wrap:hover a div img{
+    opacity: 0;
+}
+
+
 .thumbs-wrap{
 display: inline-block;
 }
