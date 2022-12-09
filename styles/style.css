@@ -298,6 +298,23 @@ header.fixed-top a:not(.mobile-icon) i {
     padding: 1.1rem;
 }
 
+/* product page  */
+
+.img-big-wrap img{
+    width: 100%;
+    object-fit: contain;
+    height: 400px;
+}
+.thumbs-wrap{
+display: inline-block;
+}
+.item-thumb img{
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
