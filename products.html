@@ -425,52 +425,357 @@
                     aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+                        <li class="breadcrumb-item active" aria-current="page">Products</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </section>
 
-    <section class="container mb-5">
-        <table class="table cart-table">
-            <thead>
-                <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Add to cart</th>
-                    <th scope="col" class="text-center">Remove</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td scope="row"><img src="./images/1.jpg" width="100"></td>
-                    <td>Headphone</td>
-                    <td>$115</td>
-                    <td>
-                       <button class="btn btn-success rounded-0">Add to cart</button> 
-                    </td>
-                    <td class="text-center"><span class="btn btn-danger rounded-0">Remove</span>
-                    </td>
-                </tr>
+    <section class="mb6rem">
+        <div class="container">
+            <div class="row">
+                <aside class="col-lg-4 col-sm-6 mb-4"><!-- COMPONENTS SIDEBAR -->
+                    <div class="card rounded-0">
+                        <article class="filter-group">
+                            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse_aside1"> <i class="icon-control fa fa-chevron-down"></i> Categories </a> </header>
+                            <div class="collapse show" id="collapse_aside1">
+                                <div class="card-body">
+                                    <ul class="list-menu">
+                                        <li><a href="#">Electronics </a></li>
+                                        <li><a href="#">Watches </a></li>
+                                        <li><a href="#">Cinema </a></li>
+                                        <li><a href="#">Clothes </a></li>
+                                        <li><a href="#">Home items </a></li>
+                                        <li><a href="#">Smartwatches </a></li>
+                                    </ul>
+                                </div> <!-- card-body.// -->
+                            </div>
+                        </article> <!-- filter-group // -->
+                        <article class="filter-group">
+                            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse_aside2"> <i class="icon-control fa fa-chevron-down"></i>
+                                    Price </a> </header>
+                            <div class="collapse show" id="collapse_aside2">
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-6"> <label class="form-label">Min</label> <input
+                                                class="form-control" placeholder="$0" type="number"> </div>
+                                        <!-- col end.// -->
+                                        <div class="col-6"> <label class="form-label">Max</label> <input
+                                                class="form-control" placeholder="$1,0000" type="number"> </div>
+                                        <!-- col end.// -->
+                                    </div> <!-- row end.// --> <button class="btn btn-light w-100"
+                                        type="button">Apply</button>
+                                </div> <!-- card-body.// -->
+                            </div>
+                        </article> <!-- filter-group // -->
+                        <article class="filter-group">
+                            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse_aside3"> <i class="icon-control fa fa-chevron-down"></i>
+                                    Size </a> </header>
+                            <div class="collapse show" id="collapse_aside3">
+                                <div class="card-body"> 
+                                    <div class="btn-group size-group d-flex gap-2" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-dark" for="btnradio1">SM</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="btnradio2">M</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="btnradio3">L</label>
 
-                <tr>
-                    <td scope="row"><img src="./images/4.jpg" width="100"></td>
-                    <td>Shoe</td>
-                    <td>$115</td>
-                    <td>
-                       <button class="btn btn-success rounded-0">Add to cart</button> 
-                    </td>
-                    <td class="text-center"><span class="btn btn-danger rounded-0">Remove</span>
-                    </td>
-                </tr>
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="btnradio4">XL</label>
+                                      </div>
+                                </div> <!-- card-body.// -->
+                            </div>
+                        </article> <!-- filter-group // -->
+                        <article class="filter-group">
+                            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse_aside4"> <i class="icon-control fa fa-chevron-down"></i>
+                                    Brand type </a> </header>
+                            <div class="collapse show" id="collapse_aside4">
+                                <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
+                                            Samsung </span> </label> <label class="form-check mb-2"> <input
+                                            class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
+                                            class="form-check-label"> Huawei </span> </label> <label
+                                        class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                            name="choose_x"> <span class="form-check-label"> Tesla model </span>
+                                    </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="checkbox" name="choose_x"> <span class="form-check-label"> Oneplus
+                                        </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="checkbox" name="choose_x"> <span class="form-check-label"> Panasonic
+                                        </span> </label> </div> <!-- card-body.// -->
+                            </div>
+                        </article> <!-- filter-group // -->
+                        <article class="filter-group">
+                            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse_aside5"> <i class="icon-control fa fa-chevron-down"></i>
+                                    Colors </a> </header>
+                            <div class="collapse show" id="collapse_aside5">
+                                <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="radio" name="check_opt_a" checked=""> <span class="form-check-label">
+                                            Lightblue </span> </label> <!-- form-check end.// --> <label
+                                        class="form-check mb-2"> <input class="form-check-input" type="radio"
+                                            name="check_opt_a"> <span class="form-check-label"> Orange </span> </label>
+                                    <!-- form-check end.// --> <label class="form-check mb-2"> <input
+                                            class="form-check-input" type="radio" name="check_opt_a"> <span
+                                            class="form-check-label"> Darkblue </span> </label>
+                                    <!-- form-check end.// --> <label class="form-check mb-2"> <input
+                                            class="form-check-input" type="radio" name="check_opt_a"> <span
+                                            class="form-check-label"> Silver </span> </label> <!-- form-check end.// -->
+                                </div> <!-- card-body.// -->
+                            </div>
+                        </article> <!-- filter-group // -->
+                    </div> <!-- card.// --><!-- ============= COMPONENTS SIDEBAR END .// ============= -->
+                </aside>
+                <div class="col-lg-8">
+                    <section class="container">
+                        <div class="row g-4 featured-products">
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <span class="badge bg-danger border product-badge">New</span>
+                                    <div class="position-relative">
+                                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
 
-            </tbody>
-        </table>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <span class="badge bg-warning border product-badge text-dark">Top</span>
+                                    <div class="position-relative">
+                                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <div class="position-relative">
+                                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <div class="position-relative">
+                                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <span class="badge bg-primary border product-badge">Hot</span>
+                                    <div class="position-relative">
+                                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <div class="position-relative">
+                                        <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <div class="position-relative">
+                                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card rounded-0 border-0 shadow-sm product-card">
+                                    <div class="position-relative">
+                                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="product-action-container">
+                                            <div class="bg-faded"></div>
+                                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                                <a><i class="fa-solid fa-heart"></i></a>
+                                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <h5 class="card-title">Product Name</h5>
+                                        <p class="card-text">$50.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </section>
-
-
 
 
     <!-- Mega footer  -->
@@ -566,7 +871,9 @@
     <script>
         'use strict'
         $(document).ready(function () {
+
         });
+
     </script>
 </body>
 
