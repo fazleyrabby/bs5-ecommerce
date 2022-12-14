@@ -1,4 +1,4 @@
-# Ecommerce html template on progress...
+# Boostrap 5 Ecommerce html template
 
 ### Demo Screenshots 
 
