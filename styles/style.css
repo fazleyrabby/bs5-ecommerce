@@ -1,6 +1,9 @@
 /* reset bootstrap  */
 :root{
-    --bs-nav-link-font-size: 0.93rem;
+    --base-font-size: 0.95rem;
+    --bs-nav-link-font-size: var(--base-font-size);
+    --bs-body-font-size:  var(--base-font-size);
+    --bs-dropdown-font-size:  var(--base-font-size);
 }
 
 body {
