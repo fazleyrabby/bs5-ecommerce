@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
 
         element.addEventListener('click', function (e) {
-
             let nextEl = element.nextElementSibling;
             let parentEl = element.parentElement;
 
