@@ -436,58 +436,61 @@
     </section>
 
     <section class="container mb-5">
-        <table class="table cart-table">
-            <thead>
-                <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Price</th>
-                    <th scope="col" width="10%">Quantity</th>
-                    <th scope="col" width="10%" class="text-center">Total</th>
-                    <th scope="col" class="text-center">Remove</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="item1">
-                    <td scope="row"><img src="./images/1.jpg" width="100"></td>
-                    <td>Headphone</td>
-                    <td>$115</td>
-                    <td class="p-0 vertical-middle">
-                        <div class="input-group mb-3">
-                            <button class="btn btn-outline-danger decrement rounded-0" data-id="1"
-                                type="button">-</button>
-                            <input type="text" id="quantity1" class="form-control" value="1" min="1" placeholder=""
-                                aria-label="Example text with two button addons">
-                            <button class="btn btn-outline-success increment rounded-0" type="button"
-                                data-id="1">+</button>
-                        </div>
-                    </td>
-                    <td class="text-center">1</td>
-                    <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
-                    </td>
-                </tr>
-
-                <tr id="item2">
-                    <td scope="row"><img src="./images/4.jpg" width="100"></td>
-                    <td>Shoe</td>
-                    <td>$75</td>
-                    <td class="p-0 vertical-middle">
-                        <div class="input-group mb-3">
-                            <button class="btn btn-outline-danger decrement rounded-0" data-id="2"
-                                type="button">-</button>
-                            <input type="text" id="quantity2" class="form-control" value="1" min="1" placeholder=""
-                                aria-label="Example text with two button addons">
-                            <button class="btn btn-outline-success increment rounded-0" data-id="2"
-                                type="button">+</button>
-                        </div>
-                    </td>
-                    <td class="text-center">1</td>
-                    <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table cart-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col" width="10%">Quantity</th>
+                        <th scope="col" width="10%" class="text-center">Total</th>
+                        <th scope="col" class="text-center">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="item1">
+                        <td scope="row"><img src="./images/1.jpg" width="100"></td>
+                        <td>Headphone</td>
+                        <td>$115</td>
+                        <td class="p-0 vertical-middle">
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-danger decrement rounded-0" data-id="1"
+                                    type="button">-</button>
+                                <input type="text" id="quantity1" class="form-control" value="1" min="1" placeholder=""
+                                    aria-label="Example text with two button addons">
+                                <button class="btn btn-outline-success increment rounded-0" type="button"
+                                    data-id="1">+</button>
+                            </div>
+                        </td>
+                        <td class="text-center">1</td>
+                        <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
+                        </td>
+                    </tr>
+    
+                    <tr id="item2">
+                        <td scope="row"><img src="./images/4.jpg" width="100"></td>
+                        <td>Shoe</td>
+                        <td>$75</td>
+                        <td class="p-0 vertical-middle">
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-danger decrement rounded-0" data-id="2"
+                                    type="button">-</button>
+                                <input type="text" id="quantity2" class="form-control" value="1" min="1" placeholder=""
+                                    aria-label="Example text with two button addons">
+                                <button class="btn btn-outline-success increment rounded-0" data-id="2"
+                                    type="button">+</button>
+                            </div>
+                        </td>
+                        <td class="text-center">1</td>
+                        <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+        
     </section>
 
     <section class="container py-4">
