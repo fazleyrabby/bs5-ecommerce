@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer type="module" src="./js/main.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Top Header Section -->
+    <nav class="py-2 bg-dark bg-opacity-10 border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <a href="#" class="nav-link link-dark active p-0 me-2"
+                    aria-current="page"><small>hello@test.com</small></a>
+                <a href="#" class="nav-link link-dark p-0">
+                    <small>Free Shipping for all Order of
+                        $99</small></a>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i
+                            class="fa-solid fa-user"></i>
+                        Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <header id="navbar_top" class="d-flex flex-wrap justify-content-between align-items-center py-3">
+            <a href="/bs5-ecommerce/index.html"
+                class="d-flex align-items-center col-md-3 text-dark text-decoration-none">
+                <!-- RH-Ecommerce -->
+                <img class="mb-4" src="./images/logo/logo.svg" alt="">
+            </a>
+
+            <div class="mobile-nav d-block d-md-none">
+                <span type="button" class="bg-black text-white h-100 px-3 py-2" data-bs-toggle="offcanvas"
+                    data-bs-target="#menu" aria-controls="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="menu"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav col-12 col-md-auto d-flex flex-column mobile-menu">
+                            <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
+                            <li><a href="products.html" class="nav-link px-2 link-dark">PRODUCTS</a></li>
+                            <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-2 dropdown-toggle text-dark" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
+                                    <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Single Product</a></li>
+                                    <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="col-md-3 top-icons d-flex gap-3 px-2 py-3">
+                            <a class="position-relative mobile-icon" href="./wishlist.html">
+                                <i class="fa-solid fa-heart text-dark"></i> <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                            <a href="javascript:void(0)" class="position-relative mobile-icon"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <i class="fa-sharp fa-solid fa-bag-shopping text-dark"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                            <span class="text-dark"><strong>items:</strong> $150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
+                <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
+                <li><a href="products.html" class="nav-link px-2 link-dark">PRODUCTS</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        PAGES
+                    </a>
+                    <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
+                        <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="product.html">Single Product</a></li>
+                        <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                        <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="col-md-3 text-end top-icons d-flex justify-content-end gap-3 d-none d-md-flex">
+                <a class="position-relative" href="./wishlist.html">
+                    <i class="fa-solid fa-heart text-dark"></i> <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        3
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <a href="javascript:void(0)" class="position-relative" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa-sharp fa-solid fa-bag-shopping text-dark"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        1
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <span><strong>items:</strong> $150</span>
+            </div>
+        </header>
+    </section>
+
+    <!-- cart sidebar  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" data-bs-backdrop="true"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart Details</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <div class="list-of-items">
+                    <div class="list-group w-auto rounded-0">
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 p-0 cart-product"
+                            aria-current="true">
+                            <img src="./images/4.jpg" alt="twbs" width="100" height="100" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between info">
+                                <div>
+                                    <h6 class="mb-0">Headphone</h6>
+                                    <p class="mb-0 opacity-75">Size: M | Color: Red</p>
+                                    <p class="mb-0 opacity-75">1 x $100</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 p-0 cart-product"
+                            aria-current="true">
+                            <img src="./images/2.jpg" alt="twbs" width="100" height="100" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between info">
+                                <div>
+                                    <h6 class="mb-0">Headphone</h6>
+                                    <p class="mb-0 opacity-75">Size: M | Color: Red</p>
+                                    <p class="mb-0 opacity-75">1 x $100</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 p-0 cart-product"
+                            aria-current="true">
+                            <img src="./images/3.jpg" alt="twbs" width="100" height="100" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between info">
+                                <div>
+                                    <h6 class="mb-0">Headphone</h6>
+                                    <p class="mb-0 opacity-75">Size: M | Color: Red</p>
+                                    <p class="mb-0 opacity-75">1 x $100</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 p-0 cart-product"
+                            aria-current="true">
+                            <img src="./images/1.jpg" alt="twbs" width="100" height="100" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between info">
+                                <div>
+                                    <h6 class="mb-0">Headphone</h6>
+                                    <p class="mb-0 opacity-75">Size: M | Color: Red</p>
+                                    <p class="mb-0 opacity-75">1 x $100</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 p-0 cart-product"
+                            aria-current="true">
+                            <img src="./images/2.jpg" alt="twbs" width="100" height="100" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between info">
+                                <div>
+                                    <h6 class="mb-0">Headphone</h6>
+                                    <p class="mb-0 opacity-75">Size: M | Color: Red</p>
+                                    <p class="mb-0 opacity-75">1 x $100</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 p-0 cart-product"
+                            aria-current="true">
+                            <img src="./images/4.jpg" alt="twbs" width="100" height="100" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between info">
+                                <div>
+                                    <h6 class="mb-0">Headphone</h6>
+                                    <p class="mb-0 opacity-75">Size: M | Color: Red</p>
+                                    <p class="mb-0 opacity-75">1 x $100</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart-calculation">
+                    <table class="table">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th>$110</th>
+                        </tr>
+                    </table>
+                    <div class="d-flex gap-2 p-3">
+                        <a href="cart.html" class="btn btn-outline-success w-100 py-3">View Cart</a>
+                        <a href="checkout.html" class="btn btn-dark w-100 py-3">Checkout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hero section -->
+    <section class="container mb6rem">
+        <div class="row">
+            <!-- Sidebar Menu  -->
+            <div class="col-md-3">
+                <div class="accordion d-none d-md-block" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item rounded-0">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <span class="accordion-button bg-dark  text-white rounded-0 border-0 all-categories-btn"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;All Categories
+                            </span>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show rounded-0"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body p-0 rounded-0">
+                                <nav class="sidebar">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-solid fa-tv"></i></span>
+                                                <span>TV</span></a>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-solid fa-stopwatch"></i></span>
+                                                <span>Watches</span></a>
+                                            <ul class="submenu dropdown-menu p-0 rounded-1 shadow border-0">
+                                                <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-solid fa-camera"></i></span>
+                                                <span>Camera</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i
+                                                        class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-solid fa-headphones"></i></span><span>Audio</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-solid fa-couch"></i></span><span>Furnitures</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <span><i
+                                                        class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <span><i
+                                                        class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Slider  -->
+            <div class="col-md-9">
+                <div class="d-flex mb-3">
+                    <div class="d-flex d-md-none">
+                        <span
+                            class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center"
+                            type="button" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">All Categories
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="sidebar">
+                                    <ul class="nav flex-column" id="nav_accordion">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i
+                                                    class="fa-solid fa-tv"></i></span>
+                                                <span>TV</span></a>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-solid fa-stopwatch"></i></span>
+                                                <span>Watches</span></a>
+                                            <ul class="submenu collapse shadow">
+                                                <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item has-submenu">
+                                            <a class="nav-link" href="#"> 
+                                                <span><i class="fa-solid fa-gamepad"></i></span>
+                                                <span>Game</span> </a>
+                                            <ul class="submenu collapse shadow">
+                                                <li><a class="nav-link" href="#">Submenu item 4 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 5 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                                                <li><a class="nav-link" href="#">Submenu item 7 </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> 
+                                                <span><i class="fa-solid fa-camera"></i></span><span>Camera</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-headphones"></i></span> <span>Audio</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span> <span>Furnitures</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span> </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-2 rounded-0 search-bar">
+                        <button class="btn btn-outline-dark dropdown-toggle rounded-0 border" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
+                        <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                        <input type="text" class="form-control rounded-0" placeholder="Search Term.."
+                            aria-label="Text input with dropdown button">
+                        <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark">Search</span>
+                    </div>
+                    <!-- <div class="col-md-4">other info</div> -->
+                </div>
+                <div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide top-carousel"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                <div class="bg-faded"></div>
+                                <div class="carousel-caption d-none d-md-block text-start text-white p-2">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-md btn-dark rounded-0 border border-light-subtle"
+                                            href="#">View</a></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./images/2.jpg" class="d-block w-100" alt="2">
+                                <div class="bg-faded"></div>
+                                <div class="carousel-caption d-none d-md-block text-start text-white p-2">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-md btn-dark rounded-0 border border-light-subtle"
+                                            href="#">View</a></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/3.jpg" class="d-block w-100" alt="3">
+                                <div class="bg-faded"></div>
+                                <div class="carousel-caption d-none d-md-block text-start text-white p-2">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-md btn-dark rounded-0 border border-light-subtle"
+                                            href="#">View</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Categories Card Slider  -->
+    <section class="container mb6rem">
+
+        <div class="category-carousel glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <a
+                                class="category-title btn rounded-0 btn-dark">Category
+                                1</a></div>
+                    </li>
+                    <li class="glide__slide">
+                        <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <a
+                                class="category-title btn rounded-0 btn-dark">Category
+                                2</a></div>
+                    </li>
+                    <li class="glide__slide">
+                        <div> <img src="./images/3.jpg" class="d-block w-100" alt="1"> <a
+                                class="category-title btn rounded-0 btn-dark">Category
+                                3</a></div>
+                    </li>
+                    <li class="glide__slide">
+                        <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <a
+                                class="category-title btn rounded-0 btn-dark">Category
+                                4</a></div>
+                    </li>
+                    <li class="glide__slide">
+                        <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <a
+                                class="category-title btn rounded-0 btn-dark">Category
+                                5</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left bg-dark bg-opacity-50" data-glide-dir="<"><i
+                        class="fa-solid fa-angle-left"></i></button>
+                <button class="glide__arrow glide__arrow--right bg-dark bg-opacity-50" data-glide-dir=">"><i
+                        class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+
+        <!-- <div class="category-carousel">
+            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    1</a></div>
+            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    2</a></div>
+            <div> <img src="./images/3.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    3</a></div>
+            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    4</a></div>
+            <div> <img src="./images/1.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    5</a></div>
+            <div> <img src="./images/2.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    6</a></div>
+            <div> <img src="./images/4.jpg" class="d-block w-100" alt="1"> <a
+                    class="category-title btn rounded-0 btn-dark">Category
+                    7</a></div>
+        </div> -->
+    </section>
+
+
+    <!-- Featured Products  -->
+    <section class="container mb6rem">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row g-4 featured-products">
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-danger border product-badge">New</span>
+                    <div class="position-relative">
+                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-warning border product-badge text-dark">Top</span>
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <span class="badge bg-primary border product-badge">Hot</span>
+                    <div class="position-relative">
+                        <img src="./images/1.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sales  -->
+    <!-- two column layout  -->
+    <div class="container mb6rem">
+        <h2 class="text-center mb-4">Flash Sales</h2>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative rounded-0">
+                    <div class="col-5 d-none d-lg-block">
+                        <svg class="flash-sales-image" style="background-image: url('./images/3.jpg');" width="100%"
+                            height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                        </svg>
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">Product 1</h3>
+                        <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                        <span class="badge bg-danger border product-badge">New</span>
+                        <p class="card-text"><span class="text-danger me-2">$79.00</span><small class="me-1"><del
+                                    class="text-muted">$129.00</del></small><small class="text-success">-30% off</small>
+                        </p>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="d-flex justify-content-between">
+                            <span>Already Sold: 5</span>
+                            <span>Available: 10</span>
+                        </p>
+                        <div class="d-flex gap-1 text-center flash-sale-counter">
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">15</h4>
+                                    <small class="flash-sale-counter-title">Days</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">00</h4>
+                                    <small class="flash-sale-counter-title">Hours</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">41</h4>
+                                    <small class="flash-sale-counter-title">Minutes</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">35</h4>
+                                    <small class="flash-sale-counter-title">Seconds</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-5 d-none d-lg-block">
+                        <svg class="flash-sales-image" style="background-image: url('./images/2.jpg');" width="100%"
+                            height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                        </svg>
+
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
+                        <h3 class="mb-0">Product 2</h3>
+                        <p class="card-text"><span class="text-danger me-2">$44.00</span><small class="me-1"><del
+                                    class="text-muted">$80.00</del></small><small class="text-success">-30% off</small>
+                        </p>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="d-flex justify-content-between">
+                            <span>Already Sold: 4</span>
+                            <span>Available: 11</span>
+                        </p>
+                        <div class="d-flex gap-1 text-center flash-sale-counter">
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">15</h4>
+                                    <small class="flash-sale-counter-title">Days</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">00</h4>
+                                    <small class="flash-sale-counter-title">Hours</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">41</h4>
+                                    <small class="flash-sale-counter-title">Minutes</small>
+                                </div>
+                            </div>
+                            <div class="p-2 flex-fill bg-light">
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">35</h4>
+                                    <small class="flash-sale-counter-title">Seconds</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 column layout of different type of products  -->
+    <div class="container mb6rem">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h4>Latest Products</h4>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="vertical-carousel glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div>Product Title</div>
+                                                <div>Price: $25</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div>Product Title</div>
+                                                <div>Price: $25</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div>Product Title</div>
+                                                <div>Price: $25</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div>Product Title</div>
+                                                <div>Price: $25</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div>Product Title</div>
+                                                <div>Price: $25</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div>Product Title</div>
+                                                <div>Price: $25</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left bg-dark bg-opacity-50" data-glide-dir="<"><i
+                                class="fa-solid fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right bg-dark bg-opacity-50" data-glide-dir=">"><i
+                                class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h4>Top Products</h4>
+                    <a href="#">View All</a>
+                </div>
+                <div class="owl-carousel vertical-carousel">
+                    <div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h4>On Sale Products</h4>
+                    <a href="#">View All</a>
+                </div>
+                <div class="owl-carousel vertical-carousel">
+                    <div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/1.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/3.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/4.jpg" class="d-block w-100" alt="1">
+                                </div>
+                                <div class="col-md-7">
+                                    <div>Product Title</div>
+                                    <div>Price: $25</div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand Logos  -->
+    <div class="container mb6rem">
+        <h2 class="text-center mb-4">Top Brands</h2>
+        <div class="brand-carousel glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/1.png">
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/2.png">
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/3.png">
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/4.png">
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/3.png">
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/2.png">
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="item">
+                            <img src="./images/brands/1.png">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left bg-dark bg-opacity-50" data-glide-dir="<"><i
+                        class="fa-solid fa-angle-left"></i></button>
+                <button class="glide__arrow glide__arrow--right bg-dark bg-opacity-50" data-glide-dir=">"><i
+                        class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Lates 3 Blogs  -->
+    <div class="container mb6rem">
+        <h2 class="text-center mb-4">Latest Blogs</h2>
+        <div class="row align-items-md-stretch blogs">
+            <div class="col-md-4">
+                <div class="card rounded-0 shadow-sm border-0">
+                    <div class="card-img-top">
+                        <img src="./images/2.jpg" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <small>
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>November 12,
+                                <script>document.write(new Date().getFullYear())</script>
+                            </span>
+                        </small>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="btn btn-outline-dark rounded-0" type="button">Read More...</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded-0 shadow-sm border-0">
+                    <div class="card-img-top">
+                        <img src="./images/3.jpg" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <small>
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>November 12,
+                                <script>document.write(new Date().getFullYear())</script>
+                            </span>
+                        </small>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="btn btn-outline-dark rounded-0" type="button">Read More...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded-0 shadow-sm border-0">
+                    <div class="card-img-top">
+                        <img src="./images/2.jpg" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <small>
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>November 12,
+                                <script>document.write(new Date().getFullYear())</script>
+                            </span>
+                        </small>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="btn btn-outline-dark rounded-0" type="button">Read More...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mega footer  -->
+    <div class="footer-bg pt-4">
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-3">
+                        <!-- <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19"> -->
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Address: 60-49 Road 11378 New York</li>
+                            <li class="nav-item mb-2">Phone: +000000000</li>
+                            <li class="nav-item mb-2">Email: hello@test.com</li>
+                        </ul>
+
+                        <small class="d-block mb-3 text-muted">© 2017–
+                            <script>document.write(new Date().getFullYear())</script>
+                        </small>
+
+
+
+
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control rounded-0"
+                                    placeholder="Email address">
+                                <button class="btn btn-primary rounded-0 btn-dark" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+                    <p>©
+                        <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.
+                    </p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- <script type="module">
+        'use strict'
+        $(document).ready(function () {
+        });
+    </script> -->
+
+    <script type="module">
+        import Glide from '@glidejs/glide'
+        new Glide('.category-carousel', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            autoplay: 3000,
+            hoverpause: true,
+        }).mount()
+
+        new Glide('.vertical-carousel', {
+            type: 'carousel',
+            startAt: 0,
+            autoplay: 3000,
+            hoverpause: true
+        }).mount()
+
+        new Glide('.brand-carousel', {
+            type: 'carousel',
+            startAt: 0,
+            autoplay: 2500,
+            perView: 5,
+            breakpoints: {
+                1024: {
+                    perView: 3
+                },
+                600: {
+                    perView: 2
+                }
+            },
+            hoverpause: true
+        }).mount()
+    </script>
+</body>
+
+</html>
