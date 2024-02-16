@@ -16,20 +16,9 @@ body {
 }
 
 /* custom utility classes  */
-.vertical-middle {
-    vertical-align: middle;
-}
 
-.mb2rem {
-    margin-bottom: 3rem;
-}
-
-.mb3rem {
-    margin-bottom: 3rem;
-}
-
-.mb6rem {
-    margin-bottom: 6rem;
+.mb-6 {
+    margin-bottom: $spacer * 4;
 }
 
 .bg-faded {
@@ -49,21 +38,17 @@ body {
     left: 5px;
 }
 
-.nav:not(.top-nav) .nav-link:hover,
-.nav:not(.top-nav) .nav-item.dropdown .nav-link:hover {
-    background: var(--bs-link-hover-background);
-    color: var(--bs-link-hover-color) !important;
-}
 .top-nav .nav-link:hover{
     color: var(--bs-gray-600);
 }
+
 .nav-link {
     padding: 0.75rem;
     color: var(--bs-dark);
 }
 
-/* header  */
 
+/* header  */
 header.fixed-top {
     background: var(--bs-dark) !important;
     color: var(--bs-light) !important;
@@ -76,14 +61,17 @@ header.fixed-top a:not(.mobile-icon) i {
     color: var(--bs-light) !important;
 }
 
+
 .mobile-menu a.nav-link {
     padding: 1rem;
 }
 
-.mobile-menu a.nav-link:hover {
+.mobile-menu a.nav-link:hover,
+.top-navigation .nav-link:hover {
     background: var(--bs-link-hover-background);
     color: var(--bs-link-hover-color) !important;
 }
+
 
 .dropdown-menu {
     overflow: hidden;
@@ -121,14 +109,12 @@ header.fixed-top a:not(.mobile-icon) i {
     position: relative;
 }
 
-
 .search-bar {
     height: 3.5rem;
 }
 
 .mobile-category-btn {
     height: 3.5rem;
-
 }
 
 .sidebar li .submenu {
@@ -324,7 +310,7 @@ header.fixed-top a:not(.mobile-icon) i {
 /* Cart Page  */
 .absolute-category {
     position: absolute;
-    width: 304px;
+    min-width: 414px;
     border: 0.2px solid var(--bs-gray-200);
     background: var(--bs-light);
     z-index: 999;
@@ -412,11 +398,13 @@ header.fixed-top a:not(.mobile-icon) i {
 .buy-now-buttons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .buy-now-buttons a {
-    width: 100%;
+    flex: 1 1 0px;
+    // width: 100%;
 }
 .card-header-tabs{
     margin: 0;
@@ -506,7 +494,6 @@ header.fixed-top a:not(.mobile-icon) i {
     }
     .sidebar .submenu,
     .sidebar .dropdown-menu {
-
         position: static !important;
         margin-left: 0.7rem;
         margin-right: 0.7rem;
