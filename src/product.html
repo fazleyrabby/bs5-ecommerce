@@ -14,16 +14,14 @@
     <!-- Top Header Section -->
     <nav class="py-2 bg-dark bg-opacity-10 border-bottom">
         <div class="container d-flex flex-wrap">
-            <ul class="nav me-auto">
-                <a href="#" class="nav-link  active p-0 me-2"
-                    aria-current="page"><small>hello@test.com</small></a>
+            <ul class="nav me-auto top-nav">
+                <a href="#" class="nav-link active p-0 me-2" aria-current="page"><small>hello@test.com</small></a>
                 <a href="#" class="nav-link  p-0">
                     <small>Free Shipping for all Order of
                         $99</small></a>
             </ul>
-            <ul class="nav">
-                <li class="nav-item"><a href="login.html" class="nav-link  p-0"><i
-                            class="fa-solid fa-user"></i>
+            <ul class="nav top-nav">
+                <li class="nav-item"><a href="login.html" class="nav-link p-0"><i class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
@@ -59,7 +57,7 @@
                                     PAGES
                                 </a>
                                 <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
-                                    <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="/index.html">Home</a></li><li><a class="dropdown-item" href="cart.html">Cart</a></li>
                                     <li><a class="dropdown-item" href="product.html">Single Product</a></li>
                                     <li><a class="dropdown-item" href="products.html">All Products</a></li>
                                     <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
@@ -104,7 +102,7 @@
                         PAGES
                     </a>
                     <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
-                        <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="/index.html">Home</a></li><li><a class="dropdown-item" href="cart.html">Cart</a></li>
                         <li><a class="dropdown-item" href="product.html">Single Product</a></li>
                         <li><a class="dropdown-item" href="products.html">All Products</a></li>
                         <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
@@ -344,8 +342,7 @@
                                     <ul class="nav flex-column" id="nav_accordion">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span><i
-                                                    class="fa-solid fa-tv"></i></span>
+                                                <span><i class="fa-solid fa-tv"></i></span>
                                                 <span>TV</span></a>
                                         </li>
                                         <li class="nav-item has-submenu">
@@ -359,7 +356,7 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item has-submenu">
-                                            <a class="nav-link" href="#"> 
+                                            <a class="nav-link" href="#">
                                                 <span><i class="fa-solid fa-gamepad"></i></span>
                                                 <span>Game</span> </a>
                                             <ul class="submenu collapse shadow">
@@ -370,24 +367,31 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> 
+                                            <a class="nav-link" href="#">
                                                 <span><i class="fa-solid fa-camera"></i></span><span>Camera</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
+                                            <a class="nav-link" href="#"> <span><i
+                                                        class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-headphones"></i></span> <span>Audio</span> </a>
+                                            <a class="nav-link" href="#"><span><i
+                                                        class="fa-solid fa-headphones"></i></span> <span>Audio</span>
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span> <span>Furnitures</span> </a>
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span>
+                                                <span>Furnitures</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
+                                            <a class="nav-link" href="#"><span><i
+                                                        class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span> </a>
+                                            <a class="nav-link" href="#"> <span><i
+                                                        class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -442,22 +446,56 @@
                                 </div>
                             </a> </div>
                         <!-- img-big-wrap.// -->
-                        <div class="thumbs-wrap"> <a href="#" class="item-thumb">
-                                <img src="./images/1.jpg"></a>
+                        <div class="thumbs-wrap glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><a href="#" class="item-thumb"><img src="./images/1.jpg" alt=""></a></li>
+                                    <li class="glide__slide"><a href="#" class="item-thumb"><img src="./images/2.jpg" alt=""></a></li>
+                                    <li class="glide__slide"><a href="#" class="item-thumb"><img src="./images/3.jpg" alt=""></a></li>
+                                    <li class="glide__slide"><a href="#" class="item-thumb"><img src="./images/4.jpg" alt=""></a></li>
+                                    <li class="glide__slide"><a href="#" class="item-thumb"><img src="./images/1.jpg" alt=""></a></li>
+                                    <li class="glide__slide"><a href="#" class="item-thumb"><img src="./images/2.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left bg-dark bg-opacity-50" data-glide-dir="<"><i
+                                        class="fa-solid fa-angle-left"></i></button>
+                                <button class="glide__arrow glide__arrow--right bg-dark bg-opacity-50" data-glide-dir=">"><i
+                                        class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <!-- <div class="thumbs-wrap">
                             <a href="#" class="item-thumb">
-                                <img src="./images/2.jpg"></a>
+                                <img src="./images/1.jpg">
+                            </a>
+                            <a href="#" class="item-thumb">
+                                <img src="./images/2.jpg">
+                            </a>
                             <a href="#" class="item-thumb">
                                 <img src="./images/3.jpg"></a>
                             <a href="#" class="item-thumb">
                                 <img src="./images/4.jpg"></a>
                             <a href="#" class="item-thumb">
                                 <img src="./images/1.jpg"></a>
-                        </div>
+                        </div> -->
                     </article>
                 </aside>
                 <div class="col-lg-6">
                     <article class="ps-lg-3">
                         <h4 class="title text-dark">Over Ear Headset</h4>
+                        <p>Made of pure cotton Off-White is a streetwear-inspired collection that continues to break
+                            away from the conventions of divstream fashion. Made in Italy, these black and brown
+                            Odsy-1000 low-top sneakers.</p>
+                        <dl class="row">
+                            <dt class="col-3">Model</dt>
+                            <dd class="col-9">Hugo Boss</dd>
+                            <dt class="col-3">Color</dt>
+                            <dd class="col-9">Brown</dd>
+                            <dt class="col-3">Material</dt>
+                            <dd class="col-9">Cotton, Jeans </dd>
+                            <dt class="col-3">Delivery</dt>
+                            <dd class="col-9">Russia, USA, and Europe </dd>
+                        </dl>
                         <div class="rating-wrap my-3 d-flex gap-2">
                             <div>
                                 <i class="fa-solid fa-star text-warning"></i>
@@ -467,29 +505,15 @@
                                 <i class="fa-regular fa-star"></i>
                                 <span>(5)</span>
                             </div>
-                            <span class="label-rating text-muted"> <i class="fa fa-shopping-basket"></i>
-                                154 orders
+                            <span class="label-rating text-muted text-decoration-underline">
+                                154 reviews
                             </span>
-                            <span class="label-rating text-success">Verified</span>
                         </div> <!-- rating-wrap.// -->
                         <div class="mb-3"> <span class="h5">$815.00</span>
                         </div>
-                        <p>Made of pure cotton Off-White is a streetwear-inspired collection that continues to break
-                            away from the conventions of divstream fashion. Made in Italy, these black and brown
-                            Odsy-1000 low-top sneakers.</p>
-                        <dl class="row">
-                            <dt class="col-3">Model#</dt>
-                            <dd class="col-9">Hugo Boss</dd>
-                            <dt class="col-3">Color</dt>
-                            <dd class="col-9">Brown</dd>
-                            <dt class="col-3">Material</dt>
-                            <dd class="col-9">Cotton, Jeans </dd>
-                            <dt class="col-3">Delivery</dt>
-                            <dd class="col-9">Russia, USA, and Europe </dd>
-                        </dl>
-                        <hr>
                         <div class="row">
-                            <div> <select class="form-select">
+                            <div> 
+                                <select class="form-select rounded-0">
                                     <option selected="">Select size</option>
                                     <option>SM</option>
                                     <option>M</option>
@@ -507,9 +531,13 @@
                                             type="radio" name="choose_11" value="option1"> <span
                                             class="form-check-label">Blue</span> </label> </div>
                             </div> <!-- col.// -->
-                        </div> <!-- row.// --> <a href="#" class="btn btn-success rounded-0"> Buy now </a> <a href="#"
-                            class="btn btn-dark rounded-0"> <i class="me-2 fa fa-shopping-basket"></i> Add to cart </a>
-                        <a href="#" class="btn btn-light rounded-0"> <i class="me-2 fa fa-heart"></i> Save </a>
+                        </div> <!-- row.// -->
+                        <div class="buy-now-buttons">
+                            <a href="#" class="btn btn-outline-dark rounded-0"> Buy now </a> <a href="#"
+                                class="btn btn-dark rounded-0"> <i class="me-2 fa fa-shopping-basket"></i> Add to cart
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary rounded-0"> <i class="me-2 fa fa-heart"></i> Wishlist </a>
+                        </div>
                     </article> <!-- product-info-aside .// -->
                 </div> <!-- col.// -->
             </div> <!-- row.// -->
@@ -522,9 +550,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-3">
-                    <div class="card">
-                        <header class="card-header">
-                            <ul class="nav nav-tabs card-header-tabs">
+                    <div class="card rounded-0 border-0 shadow-sm">
+                        <header class="card-header p-0">
+                            <ul class="nav nav-pills nav-justified card-header-tabs">
                                 <li class="nav-item">
                                     <a href="#" data-bs-target="#tab_specs" data-bs-toggle="tab"
                                         class="nav-link active">Specification</a>
@@ -543,7 +571,7 @@
                                 </li>
                             </ul>
                         </header>
-                        <div class="tab-content">
+                        <div class="tab-content lh-lg">
                             <article id="tab_specs" class="tab-pane show card-body active">
                                 <p>With supporting text below as a natural lead-in to additional content. Lorem ipsum
                                     dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -618,9 +646,13 @@
                     </div>
                 </div>
                 <aside class="col-lg-4">
-                    <div class="card">
+                    <div class="card rounded-0 border-0 shadow-sm">
+                        <header class="card-header rounded-0 bg-white text-center">
+                            <h5 class="m-0">Similar items</h5>
+                        </header>
                         <div class="card-body">
-                            <h5 class="card-title">Similar items</h5>
+                            
+                            
                             <article class="d-flex mb-3 gap-3">
                                 <a href="#">
                                     <img src="./images/2.jpg" width="96" height="96" class="img-md img-thumbnail">
@@ -676,7 +708,9 @@
                             <li class="nav-item mb-2">Email: hello@test.com</li>
                         </ul>
 
-                        <small class="d-block mb-3 text-muted">© 2017–<script>document.write(new Date().getFullYear())</script></small>
+                        <small class="d-block mb-3 text-muted">© 2017–
+                            <script>document.write(new Date().getFullYear())</script>
+                        </small>
 
 
 
@@ -720,7 +754,9 @@
                 </div>
 
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-                    <p>© <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.</p>
+                    <p>©
+                        <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.
+                    </p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#twitter"></use>
@@ -742,17 +778,25 @@
 
     <script type="module">
         'use strict'
-        document.addEventListener('DOMContentLoaded', function(){
+        import Glide from '@glidejs/glide'
+        document.addEventListener('DOMContentLoaded', function () {
             const items = document.querySelectorAll('.item-thumb');
             const thumbnail = document.querySelector('.img-thumbnail a div');
             thumbnail.addEventListener('mousemove', zoom)
             items.forEach(function (each) {
-                each.addEventListener('click', function (e) {
+
+                each.addEventListener('mouseenter', function (e) {
                     e.preventDefault()
+                    items.forEach(i => i.classList.remove('active'))
+                    // each.target.classList.remove('active')
+                    e.target.classList.add('active')
                     let image = each.children[0].getAttribute('src');
                     thumbnail.style.backgroundImage = `url(${image})`
                     thumbnail.children[0].setAttribute('src', image)
                 })
+                // each.addEventListener('mouseleave', function (e) {
+                //     let image = each.children[0].getAttribute('src');
+                // })
             })
         })
         function zoom(e) {
@@ -766,6 +810,16 @@
             zoomer.style.backgroundPosition = `${x}% ${y}%`;
             zoomer.style.backgroundSize = "175%";
         }
+
+        
+        new Glide('.thumbs-wrap', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 5,
+            autoplay: 3000,
+            hoverpause: true,
+            // gap: 0.5,
+        }).mount()
     </script>
 </body>
 
