@@ -15,20 +15,20 @@
     <nav class="py-2 bg-dark bg-opacity-10 border-bottom">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <a href="#" class="nav-link link-dark active p-0 me-2"
+                <a href="#" class="nav-link  active p-0 me-2"
                     aria-current="page"><small>hello@test.com</small></a>
-                <a href="#" class="nav-link link-dark p-0">
+                <a href="#" class="nav-link  p-0">
                     <small>Free Shipping for all Order of
                         $99</small></a>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i
+                <li class="nav-item"><a href="login.html" class="nav-link  p-0"><i
                             class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
     </nav>
-    <!-- Navbar -->
+
     <section class="container">
         <header id="navbar_top" class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4">
             <a href="/index.html" class="d-flex align-items-center col-md-3 text-dark text-decoration-none">
@@ -49,9 +49,9 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="nav col-12 col-md-auto d-flex flex-column mobile-menu">
-                            <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
-                            <li><a href="products.html" class="nav-link px-2 link-dark">PRODUCTS</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                            <li><a href="#" class="nav-link px-2 ">BLOG</a></li>
+                            <li><a href="products.html" class="nav-link px-2 ">PRODUCTS</a></li>
+                            <li><a href="#" class="nav-link px-2 ">ABOUT</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link px-2 dropdown-toggle text-dark" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,9 +94,9 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
-                <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
-                <li><a href="products.html" class="nav-link px-2 link-dark">PRODUCTS</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                <li><a href="#" class="nav-link px-2 ">BLOG</a></li>
+                <li><a href="products.html" class="nav-link px-2 ">PRODUCTS</a></li>
+                <li><a href="#" class="nav-link px-2 ">ABOUT</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -429,42 +429,96 @@
         </div>
     </section>
 
-    <section class="container mb-5">
-        <table class="table cart-table">
-            <thead>
-                <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Add to cart</th>
-                    <th scope="col" class="text-center">Remove</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td scope="row"><img src="./images/1.jpg" width="100"></td>
-                    <td>Headphone</td>
-                    <td>$115</td>
-                    <td>
-                       <button class="btn btn-success rounded-0">Add to cart</button> 
-                    </td>
-                    <td class="text-center"><span class="btn btn-danger rounded-0">Remove</span>
-                    </td>
-                </tr>
+    <section class="container my-4">
+       <p class="text-left mb-4">Wishlist Item/s (3)</p>
+       <div class="row g-4 featured-products">
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/3.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
 
-                <tr>
-                    <td scope="row"><img src="./images/4.jpg" width="100"></td>
-                    <td>Shoe</td>
-                    <td>$115</td>
-                    <td>
-                       <button class="btn btn-success rounded-0">Add to cart</button> 
-                    </td>
-                    <td class="text-center"><span class="btn btn-danger rounded-0">Remove</span>
-                    </td>
-                </tr>
+                </div>
+            </div>
 
-            </tbody>
-        </table>
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/2.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded-0 border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="./images/4.jpg" class="card-img-top rounded-0" alt="...">
+                        <div class="product-action-container">
+                            <div class="bg-faded"></div>
+                            <div class="product-card-actions d-flex gap-4 position-absolute">
+                                <a><i class="fa-solid fa-heart"></i></a>
+                                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-left">
+                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                        <p class="card-text">$50.00</p>
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -529,13 +583,13 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
                     <p>© <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#twitter"></use>
                                 </svg></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#instagram"></use>
                                 </svg></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#facebook"></use>
                                 </svg></a></li>
                     </ul>

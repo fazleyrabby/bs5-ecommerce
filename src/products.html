@@ -15,14 +15,14 @@
     <nav class="py-2 bg-dark bg-opacity-10 border-bottom">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <a href="#" class="nav-link link-dark active p-0 me-2"
+                <a href="#" class="nav-link  active p-0 me-2"
                     aria-current="page"><small>hello@test.com</small></a>
-                <a href="#" class="nav-link link-dark p-0">
+                <a href="#" class="nav-link  p-0">
                     <small>Free Shipping for all Order of
                         $99</small></a>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="login.html" class="nav-link link-dark p-0"><i
+                <li class="nav-item"><a href="login.html" class="nav-link  p-0"><i
                             class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
@@ -51,9 +51,9 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="nav col-12 col-md-auto d-flex flex-column mobile-menu">
-                            <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
-                            <li><a href="products.html" class="nav-link px-2 link-dark">PRODUCTS</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                            <li><a href="#" class="nav-link px-2 ">BLOG</a></li>
+                            <li><a href="products.html" class="nav-link px-2 ">PRODUCTS</a></li>
+                            <li><a href="#" class="nav-link px-2 ">ABOUT</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link px-2 dropdown-toggle text-dark" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,9 +96,9 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
-                <li><a href="#" class="nav-link px-2 link-secondary">BLOG</a></li>
-                <li><a href="products.html" class="nav-link px-2 link-dark">PRODUCTS</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">ABOUT</a></li>
+                <li><a href="#" class="nav-link px-2 ">BLOG</a></li>
+                <li><a href="products.html" class="nav-link px-2 ">PRODUCTS</a></li>
+                <li><a href="#" class="nav-link px-2 ">ABOUT</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -434,46 +434,58 @@
     <section class="py-4">
         <div class="container">
             <div class="row">
-                <aside class="col-lg-4 col-sm-6 mb-4"><!-- COMPONENTS SIDEBAR -->
-                    <div class="card rounded-0">
+                <aside class="col-lg-3 col-sm-6 mb-4"><!-- COMPONENTS SIDEBAR -->
+                    <div class="card rounded-0 border-0">
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside1"> <i class="icon-control fa fa-chevron-down"></i> Categories </a> </header>
-                            <div class="collapse show" id="collapse_aside1">
-                                <div class="card-body">
-                                    <ul class="list-menu">
-                                        <li><a href="#">Electronics </a></li>
-                                        <li><a href="#">Watches </a></li>
-                                        <li><a href="#">Cinema </a></li>
-                                        <li><a href="#">Clothes </a></li>
-                                        <li><a href="#">Home items </a></li>
-                                        <li><a href="#">Smartwatches </a></li>
-                                    </ul>
+                                data-bs-target="#categories">
+                               <span> Categories </span><span class="icon-control"></span></a> </header>
+                        <div class="collapse show" id="categories">
+                            <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                        type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
+                                        Watches </span> </label> <label class="form-check mb-2"> <input
+                                        class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
+                                        class="form-check-label"> Camera </span> </label> <label
+                                    class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                        name="choose_x"> <span class="form-check-label"> Cloth </span>
+                                </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Furniture
+                                    </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Kitchen
+                                    </span> </label>
+                                    <label class="form-check mb-2"> <input class="form-check-input"
+                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Accessories
+                                    </span> </label>
+
+                                    <label class="form-check mb-2"> <input class="form-check-input"
+                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Tools
+                                    </span> </label>
+                                
                                 </div> <!-- card-body.// -->
-                            </div>
+                        </div>
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside2"> <i class="icon-control fa fa-chevron-down"></i>
-                                    Price </a> </header>
+                                    data-bs-target="#collapse_aside2">  <span> Price </span><span class="icon-control"></span> </a> 
+                                   
+                                </header>
                             <div class="collapse show" id="collapse_aside2">
                                 <div class="card-body">
-                                    <div class="row mb-3">
+                                    <div class="row mb-4">
                                         <div class="col-6"> <label class="form-label">Min</label> <input
-                                                class="form-control" placeholder="$0" type="number"> </div>
+                                                class="form-control rounded-0" min="0" placeholder="$0" type="number"> </div>
                                         <!-- col end.// -->
-                                        <div class="col-6"> <label class="form-label">Max</label> <input
-                                                class="form-control" placeholder="$1,0000" type="number"> </div>
+                                        <div class="col-6"> <label class="form-label mb-2">Max</label> <input
+                                                class="form-control rounded-0" placeholder="$1,0000" type="number"> </div>
                                         <!-- col end.// -->
-                                    </div> <!-- row end.// --> <button class="btn btn-light w-100"
+                                    </div> <!-- row end.// --> <button class="btn btn-outline-dark w-100 rounded-0"
                                         type="button">Apply</button>
                                 </div> <!-- card-body.// -->
                             </div>
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside3"> <i class="icon-control fa fa-chevron-down"></i>
-                                    Size </a> </header>
+                                    data-bs-target="#collapse_aside3"><span> Size </span><span class="icon-control"></span></a> </header>
                             <div class="collapse show" id="collapse_aside3">
                                 <div class="card-body"> 
                                     <div class="btn-group size-group d-flex gap-2" role="group" aria-label="Basic radio toggle button group">
@@ -494,8 +506,8 @@
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside4"> <i class="icon-control fa fa-chevron-down"></i>
-                                    Brand type </a> </header>
+                                    data-bs-target="#collapse_aside4">
+                                     <span> Brand </span><span class="icon-control"></span></a> </header>
                             <div class="collapse show" id="collapse_aside4">
                                 <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
                                             type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
@@ -513,8 +525,8 @@
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside5"> <i class="icon-control fa fa-chevron-down"></i>
-                                    Colors </a> </header>
+                                    data-bs-target="#collapse_aside5">
+                                     <span> Colors </span><span class="icon-control"></span></a></a> </header>
                             <div class="collapse show" id="collapse_aside5">
                                 <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
                                             type="radio" name="check_opt_a" checked=""> <span class="form-check-label">
@@ -550,7 +562,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -580,9 +592,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">
-                                            <a href="/product.html">Product Name</a>
-                                        </h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -611,7 +621,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -640,7 +650,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -670,7 +680,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -699,7 +709,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -728,7 +738,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -757,7 +767,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <h5 class="card-title">Product Name</h5>
+                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -838,13 +848,13 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
                     <p>© <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#twitter"></use>
                                 </svg></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#instagram"></use>
                                 </svg></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#facebook"></use>
                                 </svg></a></li>
                     </ul>

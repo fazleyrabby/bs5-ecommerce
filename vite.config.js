@@ -14,18 +14,12 @@ export default {
         product: path.resolve(__dirname, '/product.html'),
         products: path.resolve(__dirname, '/products.html'),
         checkout: path.resolve(__dirname, '/checkout.html'),
-        // aboutjs: resolve(__dirname, 'about.js')
       },
     },
   },
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-    //   'jquery': path.resolve(__dirname, 'node_modules/jquery'),
-    //   'owl.carousel': path.resolve(__dirname, 'node_modules/owl.carousel'),
-    //   'jquery': 'jquery/dist/jquery.slim.js',
-    //   'owl.carousel': 'owl.carousel/dist/owl.carousel.js',
-    //   'owl.carousel': 'owl.carousel/dist/owl.carousel.js'
     }
   },
   server: {
