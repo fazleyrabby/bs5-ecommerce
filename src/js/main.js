@@ -52,6 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }); // addEventListener
     }) 
+
+    document.querySelectorAll('.remove-cart-item')
+    .forEach((cartItem) => {
+        cartItem.addEventListener('click', () => {
+            cartItem.parentNode.closest('a.cart-product').remove()
+        })
+    })
 });
 
 // forEach
