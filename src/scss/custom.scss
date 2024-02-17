@@ -296,7 +296,7 @@ header.fixed-top a:not(.mobile-icon) i {
 }
 
 .list-of-items {
-    max-height: 500px;
+    // max-height: max-content;
     overflow-y: scroll;
 }
 
