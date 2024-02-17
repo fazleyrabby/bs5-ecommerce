@@ -450,8 +450,14 @@
                         </thead>
                         <tbody class="cart-details">
                             <tr id="item1">
-                                <td scope="row"><img src="./images/1.jpg" width="100"></td>
-                                <td>Headphone</td>
+                                <td scope="row">
+                                    <a class="product-link" href="/product">
+                                        <img src="./images/4.jpg" width="100">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="product-link" href="/product"><span class="card-title">Product Name</span></a>
+                                </td>
                                 <td>$115</td>
                                 <td>
                                         <select name="quantity" class="form-control rounded-0">
@@ -472,8 +478,14 @@
                             </tr>
             
                             <tr id="item2">
-                                <td scope="row"><img src="./images/4.jpg" width="100"></td>
-                                <td>Shoe</td>
+                                <td scope="row">
+                                    <a class="product-link" href="/product">
+                                        <img src="./images/2.jpg" width="100">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="product-link" href="/product"><span class="card-title">Product Name</span></a>
+                                </td>
                                 <td>$75</td>
                                 <td>
                                     <select name="quantity" class="form-control rounded-0">
@@ -499,27 +511,46 @@
             </div>
             <div class="col-md-12 col-lg-3">
                 <div class="p-3 border">
-                    <table class="table cart-summary">
-                        <thead>
-                            <tr class="text-center">
-                                <th scope="col" colspan="2">Cart Summary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Subtotal:</td>
-                                <td>$185</td>
-                            </tr>
-                            <tr>
-                                <td>Tax:</td>
-                                <td>$15</td>
-                            </tr>
-                            <tr>
-                                <td>Total (Shipping Included)</td>
-                                <td>$210</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <ul class="list-group mb-3 rounded-0">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Sub Total</h6>
+                            <!-- <small class="text-muted">Brief description</small> -->
+                          </div>
+                          <span class="text-muted">$180</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Tax</h6>
+                            <!-- <small class="text-muted">Brief description</small> -->
+                          </div>
+                          <span class="text-muted">$10</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Total</h6>
+                            <!-- <small class="text-muted">Brief description</small> -->
+                          </div>
+                          <span class="text-muted">$190</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                          <div class="text-success">
+                            <h6 class="my-0">Promo code</h6>
+                            <small>testcode123</small>
+                          </div>
+                          <span class="text-success">−$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                          <span>Total (USD)</span>
+                          <strong>$185</strong>
+                        </li>
+                      </ul>
+                      <form class="rounded-0 mb-3">
+                        <div class="input-group">
+                          <input type="text" class="form-control rounded-0" placeholder="Promo Code" autocomplete="off">
+                          <button type="submit" class="btn btn-danger rounded-0">Redeem</button>
+                        </div>
+                      </form>
                     <a class="btn btn-outline-dark rounded-0 d-block" href="./checkout.html">Checkout <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
