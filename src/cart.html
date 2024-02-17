@@ -563,7 +563,7 @@
                     </table>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-3">
+            <div class="col-md-12 col-lg-3 cart-summary">
                 <div class="p-3 border">
                     <ul class="list-group mb-3 rounded-0">
                         <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -854,7 +854,7 @@
                 const cart = document.querySelector('.cart-details');
                 if(cart.childElementCount === 0){
                     cart.innerHTML = `<tr><td class="text-center font-weight-bold fs-5 py-5" colspan=6>Cart is empty</td></tr>`
-                    document.querySelector('.cart-summary').parentNode.closest('.col-md-12.col-lg-3').remove()
+                    document.querySelector('.cart-summary').remove()
                 }
             }
 
