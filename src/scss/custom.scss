@@ -406,6 +406,10 @@ header.fixed-top a:not(.mobile-icon) i {
     flex: 1 1 0px;
     // width: 100%;
 }
+.single-product-info li a.nav-link:hover{
+    color: var(--bs-link-hover-color);
+    background: var(--bs-link-hover-background);
+}
 .card-header-tabs{
     margin: 0;
 }

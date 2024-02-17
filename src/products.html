@@ -15,15 +15,13 @@
     <nav class="py-2 bg-dark bg-opacity-10 border-bottom">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto top-nav">
-                <a href="#" class="nav-link  active p-0 me-2"
-                    aria-current="page"><small>hello@test.com</small></a>
+                <a href="#" class="nav-link  active p-0 me-2" aria-current="page"><small>hello@test.com</small></a>
                 <a href="#" class="nav-link  p-0">
                     <small>Free Shipping for all Order of
                         $99</small></a>
             </ul>
             <ul class="nav top-nav">
-                <li class="nav-item"><a href="login.html" class="nav-link  p-0"><i
-                            class="fa-solid fa-user"></i>
+                <li class="nav-item"><a href="login.html" class="nav-link  p-0"><i class="fa-solid fa-user"></i>
                         Login</a></li>
             </ul>
         </div>
@@ -32,8 +30,7 @@
     <!-- Navbar -->
     <section class="container">
         <header id="navbar_top" class="d-flex flex-wrap justify-content-between align-items-center py-3">
-            <a href="/index.html"
-                class="d-flex align-items-center col-md-3 text-dark text-decoration-none">
+            <a href="/index.html" class="d-flex align-items-center col-md-3 text-dark text-decoration-none">
                 <!-- RH-Ecommerce -->
                 <img class="mb-4" src="./images/logo/logo.svg" alt="">
             </a>
@@ -60,7 +57,8 @@
                                     PAGES
                                 </a>
                                 <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
-                                    <li><a class="dropdown-item" href="/index.html">Home</a></li><li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                                    <li><a class="dropdown-item" href="cart.html">Cart</a></li>
                                     <li><a class="dropdown-item" href="product.html">Single Product</a></li>
                                     <li><a class="dropdown-item" href="products.html">All Products</a></li>
                                     <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
@@ -105,7 +103,8 @@
                         PAGES
                     </a>
                     <ul class="dropdown-menu p-0 rounded-1 shadow border-0">
-                        <li><a class="dropdown-item" href="/index.html">Home</a></li><li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="cart.html">Cart</a></li>
                         <li><a class="dropdown-item" href="product.html">Single Product</a></li>
                         <li><a class="dropdown-item" href="products.html">All Products</a></li>
                         <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
@@ -247,127 +246,129 @@
         </div>
     </div>
 
-
-    <!-- filter offcanvas sidebar  -->
-
-    
-
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filters</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="card rounded-0 border-0">
-        <article class="filter-group">
-            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                data-bs-target="#categories">
-               <span> Categories </span><span class="icon-control"></span></a> </header>
-        <div class="collapse show" id="categories">
-            <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
-                        type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
-                        Watches </span> </label> <label class="form-check mb-2"> <input
-                        class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
-                        class="form-check-label"> Camera </span> </label> <label
-                    class="form-check mb-2"> <input class="form-check-input" type="checkbox"
-                        name="choose_x"> <span class="form-check-label"> Cloth </span>
-                </label> <label class="form-check mb-2"> <input class="form-check-input"
-                        type="checkbox" name="choose_x"> <span class="form-check-label"> Furniture
-                    </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
-                        type="checkbox" name="choose_x"> <span class="form-check-label"> Kitchen
-                    </span> </label>
-                    <label class="form-check mb-2"> <input class="form-check-input"
-                        type="checkbox" name="choose_x"> <span class="form-check-label"> Accessories
-                    </span> </label>
-
-                    <label class="form-check mb-2"> <input class="form-check-input"
-                        type="checkbox" name="choose_x"> <span class="form-check-label"> Tools
-                    </span> </label>
-                
-                </div> <!-- card-body.// -->
+    <!-- filter sidebar  -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="OffcanvasFilter"
+        aria-labelledby="OffcanvasFilterLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="OffcanvasFilterLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        </article> <!-- filter-group // -->
-        <article class="filter-group">
-            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                    data-bs-target="#collapse_aside2">  <span> Price </span><span class="icon-control"></span> </a> 
-                   
-                </header>
-            <div class="collapse show" id="collapse_aside2">
-                <div class="card-body">
-                    <div class="row mb-4">
-                        <div class="col-6"> <label class="form-label">Min</label> <input
-                                class="form-control rounded-0" min="0" placeholder="$0" type="number"> </div>
-                        <!-- col end.// -->
-                        <div class="col-6"> <label class="form-label mb-2">Max</label> <input
-                                class="form-control rounded-0" placeholder="$1,0000" type="number"> </div>
-                        <!-- col end.// -->
-                    </div> <!-- row end.// --> <button class="btn btn-outline-dark w-100 rounded-0"
-                        type="button">Apply</button>
-                </div> <!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group // -->
-        <article class="filter-group">
-            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                    data-bs-target="#collapse_aside3"><span> Size </span><span class="icon-control"></span></a> </header>
-            <div class="collapse show" id="collapse_aside3">
-                <div class="card-body"> 
-                    <div class="btn-group size-group d-flex gap-2" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-dark" for="btnradio1">SM</label>
-                      
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-dark" for="btnradio2">M</label>
-                      
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="btn btn-outline-dark" for="btnradio3">L</label>
+        <div class="offcanvas-body">
+            <div class="card rounded-0 border-0">
+                <article class="filter-group">
+                    <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                            data-bs-target="#categories">
+                            <span> Categories </span><span class="icon-control"></span></a> </header>
+                    <div class="collapse show" id="categories">
+                        <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
+                                    Watches </span> </label> <label class="form-check mb-2"> <input
+                                    class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
+                                    class="form-check-label"> Camera </span> </label> <label class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="choose_x"> <span
+                                    class="form-check-label"> Cloth </span>
+                            </label> <label class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                    name="choose_x"> <span class="form-check-label"> Furniture
+                                </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="checkbox" name="choose_x"> <span class="form-check-label"> Kitchen
+                                </span> </label>
+                            <label class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                    name="choose_x"> <span class="form-check-label"> Accessories
+                                </span> </label>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                        <label class="btn btn-outline-dark" for="btnradio4">XL</label>
-                      </div>
-                </div> <!-- card-body.// -->
+                            <label class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                    name="choose_x"> <span class="form-check-label"> Tools
+                                </span> </label>
+
+                        </div> <!-- card-body.// -->
+                    </div>
+                </article> <!-- filter-group // -->
+                <article class="filter-group">
+                    <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                            data-bs-target="#collapse_aside2"> <span> Price </span><span class="icon-control"></span>
+                        </a>
+
+                    </header>
+                    <div class="collapse show" id="collapse_aside2">
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-6"> <label class="form-label">Min</label> <input
+                                        class="form-control rounded-0" min="0" placeholder="$0" type="number"> </div>
+                                <!-- col end.// -->
+                                <div class="col-6"> <label class="form-label mb-2">Max</label> <input
+                                        class="form-control rounded-0" placeholder="$1,0000" type="number"> </div>
+                                <!-- col end.// -->
+                            </div> <!-- row end.// --> <button class="btn btn-outline-dark w-100 rounded-0"
+                                type="button">Apply</button>
+                        </div> <!-- card-body.// -->
+                    </div>
+                </article> <!-- filter-group // -->
+                <article class="filter-group">
+                    <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                            data-bs-target="#collapse_aside3"><span> Size </span><span class="icon-control"></span></a>
+                    </header>
+                    <div class="collapse show" id="collapse_aside3">
+                        <div class="card-body">
+                            <div class="btn-group size-group d-flex gap-2" role="group"
+                                aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-dark" for="btnradio1">SM</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btnradio2">M</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btnradio3">L</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btnradio4">XL</label>
+                            </div>
+                        </div> <!-- card-body.// -->
+                    </div>
+                </article> <!-- filter-group // -->
+                <article class="filter-group">
+                    <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                            data-bs-target="#collapse_aside4">
+                            <span> Brand </span><span class="icon-control"></span></a> </header>
+                    <div class="collapse show" id="collapse_aside4">
+                        <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
+                                    Samsung </span> </label> <label class="form-check mb-2"> <input
+                                    class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
+                                    class="form-check-label"> Huawei </span> </label> <label class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="choose_x"> <span
+                                    class="form-check-label"> Tesla model </span>
+                            </label> <label class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                    name="choose_x"> <span class="form-check-label"> Oneplus
+                                </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="checkbox" name="choose_x"> <span class="form-check-label"> Panasonic
+                                </span> </label> </div> <!-- card-body.// -->
+                    </div>
+                </article> <!-- filter-group // -->
+                <article class="filter-group">
+                    <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
+                            data-bs-target="#collapse_aside5">
+                            <span> Colors </span><span class="icon-control"></span></a></a> </header>
+                    <div class="collapse show" id="collapse_aside5">
+                        <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="radio" name="check_opt_a" checked=""> <span class="form-check-label">
+                                    Lightblue </span> </label> <!-- form-check end.// --> <label
+                                class="form-check mb-2"> <input class="form-check-input" type="radio"
+                                    name="check_opt_a"> <span class="form-check-label"> Orange </span> </label>
+                            <!-- form-check end.// --> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="radio" name="check_opt_a"> <span class="form-check-label"> Darkblue </span>
+                            </label>
+                            <!-- form-check end.// --> <label class="form-check mb-2"> <input class="form-check-input"
+                                    type="radio" name="check_opt_a"> <span class="form-check-label"> Silver </span>
+                            </label> <!-- form-check end.// -->
+                        </div> <!-- card-body.// -->
+                    </div>
+                </article> <!-- filter-group // -->
             </div>
-        </article> <!-- filter-group // -->
-        <article class="filter-group">
-            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                    data-bs-target="#collapse_aside4">
-                     <span> Brand </span><span class="icon-control"></span></a> </header>
-            <div class="collapse show" id="collapse_aside4">
-                <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
-                            type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
-                            Samsung </span> </label> <label class="form-check mb-2"> <input
-                            class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
-                            class="form-check-label"> Huawei </span> </label> <label
-                        class="form-check mb-2"> <input class="form-check-input" type="checkbox"
-                            name="choose_x"> <span class="form-check-label"> Tesla model </span>
-                    </label> <label class="form-check mb-2"> <input class="form-check-input"
-                            type="checkbox" name="choose_x"> <span class="form-check-label"> Oneplus
-                        </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
-                            type="checkbox" name="choose_x"> <span class="form-check-label"> Panasonic
-                        </span> </label> </div> <!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group // -->
-        <article class="filter-group">
-            <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                    data-bs-target="#collapse_aside5">
-                     <span> Colors </span><span class="icon-control"></span></a></a> </header>
-            <div class="collapse show" id="collapse_aside5">
-                <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
-                            type="radio" name="check_opt_a" checked=""> <span class="form-check-label">
-                            Lightblue </span> </label> <!-- form-check end.// --> <label
-                        class="form-check mb-2"> <input class="form-check-input" type="radio"
-                            name="check_opt_a"> <span class="form-check-label"> Orange </span> </label>
-                    <!-- form-check end.// --> <label class="form-check mb-2"> <input
-                            class="form-check-input" type="radio" name="check_opt_a"> <span
-                            class="form-check-label"> Darkblue </span> </label>
-                    <!-- form-check end.// --> <label class="form-check mb-2"> <input
-                            class="form-check-input" type="radio" name="check_opt_a"> <span
-                            class="form-check-label"> Silver </span> </label> <!-- form-check end.// -->
-                </div> <!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group // -->
-    </div> 
-  </div>
-</div>
+        </div>
+    </div>
+
 
     <!-- nav section -->
     <section class="container">
@@ -466,8 +467,7 @@
                                     <ul class="nav flex-column" id="nav_accordion">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span><i
-                                                    class="fa-solid fa-tv"></i></span>
+                                                <span><i class="fa-solid fa-tv"></i></span>
                                                 <span>TV</span></a>
                                         </li>
                                         <li class="nav-item has-submenu">
@@ -481,7 +481,7 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item has-submenu">
-                                            <a class="nav-link" href="#"> 
+                                            <a class="nav-link" href="#">
                                                 <span><i class="fa-solid fa-gamepad"></i></span>
                                                 <span>Game</span> </a>
                                             <ul class="submenu collapse shadow">
@@ -492,24 +492,31 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> 
+                                            <a class="nav-link" href="#">
                                                 <span><i class="fa-solid fa-camera"></i></span><span>Camera</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
+                                            <a class="nav-link" href="#"> <span><i
+                                                        class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-headphones"></i></span> <span>Audio</span> </a>
+                                            <a class="nav-link" href="#"><span><i
+                                                        class="fa-solid fa-headphones"></i></span> <span>Audio</span>
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span> <span>Furnitures</span> </a>
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span>
+                                                <span>Furnitures</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
+                                            <a class="nav-link" href="#"><span><i
+                                                        class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span> </a>
+                                            <a class="nav-link" href="#"> <span><i
+                                                        class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -560,45 +567,48 @@
                     <div class="card rounded-0 border-0">
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                data-bs-target="#categories">
-                               <span> Categories </span><span class="icon-control"></span></a> </header>
-                        <div class="collapse show" id="categories">
-                            <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
-                                        type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
-                                        Watches </span> </label> <label class="form-check mb-2"> <input
-                                        class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
-                                        class="form-check-label"> Camera </span> </label> <label
-                                    class="form-check mb-2"> <input class="form-check-input" type="checkbox"
-                                        name="choose_x"> <span class="form-check-label"> Cloth </span>
-                                </label> <label class="form-check mb-2"> <input class="form-check-input"
-                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Furniture
-                                    </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
-                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Kitchen
-                                    </span> </label>
-                                    <label class="form-check mb-2"> <input class="form-check-input"
-                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Accessories
-                                    </span> </label>
+                                    data-bs-target="#categories">
+                                    <span> Categories </span><span class="icon-control"></span></a> </header>
+                            <div class="collapse show" id="categories">
+                                <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
+                                            Watches </span> </label> <label class="form-check mb-2"> <input
+                                            class="form-check-input" type="checkbox" checked="" name="choose_x"> <span
+                                            class="form-check-label"> Camera </span> </label> <label
+                                        class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                            name="choose_x"> <span class="form-check-label"> Cloth </span>
+                                    </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="checkbox" name="choose_x"> <span class="form-check-label"> Furniture
+                                        </span> </label> <label class="form-check mb-2"> <input class="form-check-input"
+                                            type="checkbox" name="choose_x"> <span class="form-check-label"> Kitchen
+                                        </span> </label>
+                                    <label class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                            name="choose_x"> <span class="form-check-label"> Accessories
+                                        </span> </label>
 
-                                    <label class="form-check mb-2"> <input class="form-check-input"
-                                        type="checkbox" name="choose_x"> <span class="form-check-label"> Tools
-                                    </span> </label>
-                                
+                                    <label class="form-check mb-2"> <input class="form-check-input" type="checkbox"
+                                            name="choose_x"> <span class="form-check-label"> Tools
+                                        </span> </label>
+
                                 </div> <!-- card-body.// -->
-                        </div>
+                            </div>
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside2">  <span> Price </span><span class="icon-control"></span> </a> 
-                                   
-                                </header>
+                                    data-bs-target="#collapse_aside2"> <span> Price </span><span
+                                        class="icon-control"></span> </a>
+
+                            </header>
                             <div class="collapse show" id="collapse_aside2">
                                 <div class="card-body">
                                     <div class="row mb-4">
                                         <div class="col-6"> <label class="form-label">Min</label> <input
-                                                class="form-control rounded-0" min="0" placeholder="$0" type="number"> </div>
+                                                class="form-control rounded-0" min="0" placeholder="$0" type="number">
+                                        </div>
                                         <!-- col end.// -->
                                         <div class="col-6"> <label class="form-label mb-2">Max</label> <input
-                                                class="form-control rounded-0" placeholder="$1,0000" type="number"> </div>
+                                                class="form-control rounded-0" placeholder="$1,0000" type="number">
+                                        </div>
                                         <!-- col end.// -->
                                     </div> <!-- row end.// --> <button class="btn btn-outline-dark w-100 rounded-0"
                                         type="button">Apply</button>
@@ -607,29 +617,35 @@
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_aside3"><span> Size </span><span class="icon-control"></span></a> </header>
+                                    data-bs-target="#collapse_aside3"><span> Size </span><span
+                                        class="icon-control"></span></a> </header>
                             <div class="collapse show" id="collapse_aside3">
-                                <div class="card-body"> 
-                                    <div class="btn-group size-group d-flex gap-2" role="group" aria-label="Basic radio toggle button group">
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <div class="card-body">
+                                    <div class="btn-group size-group d-flex gap-2" role="group"
+                                        aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                            autocomplete="off" checked>
                                         <label class="btn btn-outline-dark" for="btnradio1">SM</label>
-                                      
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                            autocomplete="off">
                                         <label class="btn btn-outline-dark" for="btnradio2">M</label>
-                                      
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                            autocomplete="off">
                                         <label class="btn btn-outline-dark" for="btnradio3">L</label>
 
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                            autocomplete="off">
                                         <label class="btn btn-outline-dark" for="btnradio4">XL</label>
-                                      </div>
+                                    </div>
                                 </div> <!-- card-body.// -->
                             </div>
                         </article> <!-- filter-group // -->
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
                                     data-bs-target="#collapse_aside4">
-                                     <span> Brand </span><span class="icon-control"></span></a> </header>
+                                    <span> Brand </span><span class="icon-control"></span></a> </header>
                             <div class="collapse show" id="collapse_aside4">
                                 <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
                                             type="checkbox" checked="" name="choose_x"> <span class="form-check-label">
@@ -648,7 +664,7 @@
                         <article class="filter-group">
                             <header class="card-header"> <a href="#" class="title" data-bs-toggle="collapse"
                                     data-bs-target="#collapse_aside5">
-                                     <span> Colors </span><span class="icon-control"></span></a></a> </header>
+                                    <span> Colors </span><span class="icon-control"></span></a></a> </header>
                             <div class="collapse show" id="collapse_aside5">
                                 <div class="card-body"> <label class="form-check mb-2"> <input class="form-check-input"
                                             type="radio" name="check_opt_a" checked=""> <span class="form-check-label">
@@ -664,14 +680,16 @@
                                 </div> <!-- card-body.// -->
                             </div>
                         </article> <!-- filter-group // -->
-                    </div> 
+                    </div>
                     <!-- card.// -->
                     <!-- ============= COMPONENTS SIDEBAR END .// ============= -->
                 </aside>
                 <div class="col-lg-8 ">
                     <section class="container">
                         <div class="d-block d-lg-none mb-3 w-100">
-                            <button class="btn btn-outline-dark rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filter Products</button>
+                            <button class="btn btn-outline-dark rounded-0" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#OffcanvasFilter" aria-controls="OffcanvasFilter">Filter
+                                Products</button>
                         </div>
                         <div class="row g-4 featured-products">
                             <div class="col-md-4">
@@ -689,7 +707,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -719,7 +739,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -748,7 +770,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -777,7 +801,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -807,7 +833,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -836,7 +864,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -865,7 +895,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -894,7 +926,9 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-left">
-                                        <a class="product-link" href="/product"><h5 class="card-title">Product Name</h5></a>
+                                        <a class="product-link" href="/product">
+                                            <h5 class="card-title">Product Name</h5>
+                                        </a>
                                         <p class="card-text">$50.00</p>
                                         <div>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -929,7 +963,9 @@
                             <li class="nav-item mb-2">Email: hello@test.com</li>
                         </ul>
 
-                        <small class="d-block mb-3 text-muted">© 2017–<script>document.write(new Date().getFullYear())</script></small>
+                        <small class="d-block mb-3 text-muted">© 2017–
+                            <script>document.write(new Date().getFullYear())</script>
+                        </small>
 
 
 
@@ -973,7 +1009,9 @@
                 </div>
 
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-                    <p>© <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.</p>
+                    <p>©
+                        <script>document.write(new Date().getFullYear())</script> Company, Inc. All rights reserved.
+                    </p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="" href="#"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#twitter"></use>
