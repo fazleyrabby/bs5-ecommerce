@@ -432,92 +432,110 @@
         </div>
     </section>
 
-    <section class="container mb-5">
-        <div class="table-responsive">
-            <table class="table cart-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Image</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col" width="10%">Quantity</th>
-                        <th scope="col" width="10%" class="text-center">Total</th>
-                        <th scope="col" class="text-center">Remove</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="item1">
-                        <td scope="row"><img src="./images/1.jpg" width="100"></td>
-                        <td>Headphone</td>
-                        <td>$115</td>
-                        <td class="p-0 align-middle">
-                            <div class="input-group mb-3">
-                                <button class="btn btn-outline-danger decrement rounded-0" data-id="1"
-                                    type="button">-</button>
-                                <input type="text" id="quantity1" class="form-control" value="1" min="1" placeholder=""
-                                    aria-label="Example text with two button addons">
-                                <button class="btn btn-outline-success increment rounded-0" type="button"
-                                    data-id="1">+</button>
-                            </div>
-                        </td>
-                        <td class="text-center">1</td>
-                        <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
-                        </td>
-                    </tr>
-    
-                    <tr id="item2">
-                        <td scope="row"><img src="./images/4.jpg" width="100"></td>
-                        <td>Shoe</td>
-                        <td>$75</td>
-                        <td class="p-0 align-middle">
-                            <div class="input-group mb-3">
-                                <button class="btn btn-outline-danger decrement rounded-0" data-id="2"
-                                    type="button">-</button>
-                                <input type="text" id="quantity2" class="form-control" value="1" min="1" placeholder=""
-                                    aria-label="Example text with two button addons">
-                                <button class="btn btn-outline-success increment rounded-0" data-id="2"
-                                    type="button">+</button>
-                            </div>
-                        </td>
-                        <td class="text-center">1</td>
-                        <td class="text-center"><span class="btn btn-danger rounded-0"><i class="fa fa-times"></i></span>
-                        </td>
-                    </tr>
-    
-                </tbody>
-            </table>
+    <section class="container mb-6">
+        <h4 class="text-center my-4">Cart Details</h4>
+        <div class="row">
+            <div class="col-md-12 col-lg-9 mb-3">
+                <div class="table-responsive">
+                    <table class="table cart-table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col" width="10%">Image</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col" width="15%">Quantity</th>
+                                <th scope="col" width="10%" class="text-center">Total</th>
+                                <th scope="col" class="text-center">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-details">
+                            <tr id="item1">
+                                <td scope="row"><img src="./images/1.jpg" width="100"></td>
+                                <td>Headphone</td>
+                                <td>$115</td>
+                                <td>
+                                        <select name="quantity" class="form-control rounded-0">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                        </select>
+                                </td>
+                                <td class="text-center">1</td>
+                                <td class="text-center"><span class="btn btn-danger rounded-0 remove"><i class="fa fa-times"></i></span>
+                                </td>
+                            </tr>
+            
+                            <tr id="item2">
+                                <td scope="row"><img src="./images/4.jpg" width="100"></td>
+                                <td>Shoe</td>
+                                <td>$75</td>
+                                <td>
+                                    <select name="quantity" class="form-control rounded-0">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                            </td>
+                                <td class="text-center">1</td>
+                                <td class="text-center"><span class="btn btn-danger rounded-0 remove"><i class="fa fa-times"></i></span>
+                                </td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="p-3 border">
+                    <table class="table cart-summary">
+                        <thead>
+                            <tr class="text-center">
+                                <th scope="col" colspan="2">Cart Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Subtotal:</td>
+                                <td>$185</td>
+                            </tr>
+                            <tr>
+                                <td>Tax:</td>
+                                <td>$15</td>
+                            </tr>
+                            <tr>
+                                <td>Total (Shipping Included)</td>
+                                <td>$210</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn btn-outline-dark rounded-0 d-block" href="./checkout.html">Checkout <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
         
+        
     </section>
-
+<!-- 
     <section class="container py-4">
-        <div class="col-md-6">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Cart Totals</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Subtotal: $185</td>
-                    </tr>
-                    <tr>
-                        <td>Tax: $15</td>
-                    </tr>
-                    <tr>
-                        <td>Total (Shipping Included) $210</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a class="btn btn-success rounded-0" href="./checkout.html">Checkout</a>
-        </div>
-    </section>
+  
+    </section> -->
 
 
     <!-- similar products  -->
 
-    <section class="container">
+    <section class="container mb-6">
         <h2 class="text-center mb-4">Similar Products</h2>
         <div class="row g-4 featured-products">
             <div class="col-md-3">
@@ -721,6 +739,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             let inc = document.querySelectorAll('.increment');
             let dec = document.querySelectorAll('.decrement');
+            let remove = document.querySelectorAll('.remove');
 
             inc.forEach(function (each) {
                 each.addEventListener('click', function () {
@@ -736,6 +755,23 @@
                     input.value = parseInt(input.value)-1 > 0 ? parseInt(input.value)-1 : tr.parentNode.removeChild(tr);
                 })
             })
+
+            remove.forEach((each) => {
+                each.addEventListener('click', function() {
+                    // document.getElementById(`item${this.dataset.id}`).parentNode.removeChild(tr)
+                    // console.log(`item${this.dataset.id}`)
+                    this.closest('tr').remove()
+                    cartCheck()
+                })
+            })
+
+            function cartCheck(){
+                const cart = document.querySelector('.cart-details');
+                if(cart.childElementCount === 0){
+                    cart.innerHTML = `<tr><td class="text-center font-weight-bold fs-5 py-5" colspan=6>Cart is empty</td></tr>`
+                    document.querySelector('.cart-summary').parentNode.closest('.col-md-12.col-lg-3').remove()
+                }
+            }
 
         });
     </script>

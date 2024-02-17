@@ -316,9 +316,21 @@ header.fixed-top a:not(.mobile-icon) i {
     z-index: 999;
 }
 
+.cart-summary tbody tr td:first-child{
+    text-align: right;
+}
+.cart-summary tbody{
+    font-size: 0.9rem;
+}
+.cart-summary tr:last-child td{
+    border: none;
+}
+.cart-summary tr:not(:last-child) td{
+    padding-block: 0.8rem;
+}
 .cart-table td,
 .cart-table th {
-    padding: 1.1rem;
+    padding-block: 1.1rem;
 }
 
 /* product page  */
@@ -492,6 +504,9 @@ header.fixed-top a:not(.mobile-icon) i {
 /* ============ desktop view .end// ============ */
 
 /* ============ small devices ============ */
+.mobile-nav span[data-bs-target="#menu"]{
+    outline: 1px solid var(--bs-gray-600);
+}
 @media (max-width: 991px) {
     .item-thumb {
         width: 90px;
