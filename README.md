@@ -10,3 +10,6 @@ After cloning this repo follow below instructions<br>
 <pre> http://localhost:8080/</pre>
 ### To Build the project into a dist folder
 <pre> npm run build </pre>
+
+### Checkout the demo overview
+[![Template Overview](https://img.youtube.com/vi/nuKe7_bC6h8/0.jpg)](https://www.youtube.com/watch?v=nuKe7_bC6h8)
