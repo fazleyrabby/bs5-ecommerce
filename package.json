@@ -14,7 +14,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.2",
+    "bootstrap": "^5.3.3",
     "fslightbox": "^3.4.1",
     "jquery": "^3.7.1"
   },
