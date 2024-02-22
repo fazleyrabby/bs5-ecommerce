@@ -843,19 +843,14 @@
             const thumbnail = document.querySelector('.img-thumbnail a div');
             thumbnail.addEventListener('mousemove', zoom)
             items.forEach(function (each) {
-
                 each.addEventListener('mouseenter', function (e) {
                     e.preventDefault()
                     items.forEach(i => i.classList.remove('active'))
-                    // each.target.classList.remove('active')
                     e.target.classList.add('active')
                     let image = each.children[0].getAttribute('src');
                     thumbnail.style.backgroundImage = `url(${image})`
                     thumbnail.children[0].setAttribute('src', image)
                 })
-                // each.addEventListener('mouseleave', function (e) {
-                //     let image = each.children[0].getAttribute('src');
-                // })
             })
         })
         function zoom(e) {
@@ -877,6 +872,20 @@
             perView: 5,
             autoplay: 3000,
             hoverpause: true,
+            breakpoints: {
+                1200: {
+                    perView: 4
+                },
+                991: {
+                    perView: 6
+                },
+                767: {
+                    perView: 5
+                },
+                475: {
+                    perView: 4
+                }
+            },
             // gap: 0.5,
         }).mount()
     </script>

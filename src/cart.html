@@ -489,7 +489,7 @@
     <section class="container mb-6">
         <h4 class="text-center my-4">Cart Details</h4>
         <div class="row">
-            <div class="col-md-12 col-lg-9 mb-3">
+            <div class="col-md-12 mb-3">
                 <div class="table-responsive">
                     <table class="table cart-table table-hover">
                         <thead>
@@ -499,14 +499,14 @@
                                 <th scope="col">Price</th>
                                 <th scope="col" width="15%">Quantity</th>
                                 <th scope="col" width="10%" class="text-center">Total</th>
-                                <th scope="col" class="text-center">Remove</th>
+                                <th scope="col" class="text-center" width="5%"></th>
                             </tr>
                         </thead>
                         <tbody class="cart-details">
                             <tr id="item1">
                                 <td scope="row">
                                     <a class="product-link" href="/product">
-                                        <img src="./images/4.jpg" width="100">
+                                        <img src="./images/4.jpg">
                                     </a>
                                 </td>
                                 <td>
@@ -526,7 +526,7 @@
                                             <option>9</option>
                                         </select>
                                 </td>
-                                <td class="text-center">1</td>
+                                <td class="text-center">$115</td>
                                 <td class="text-center"><span class="btn btn-danger rounded-0 remove"><i class="fa fa-times"></i></span>
                                 </td>
                             </tr>
@@ -534,7 +534,7 @@
                             <tr id="item2">
                                 <td scope="row">
                                     <a class="product-link" href="/product">
-                                        <img src="./images/2.jpg" width="100">
+                                        <img src="./images/2.jpg">
                                     </a>
                                 </td>
                                 <td>
@@ -554,7 +554,7 @@
                                         <option>9</option>
                                     </select>
                             </td>
-                                <td class="text-center">1</td>
+                                <td class="text-center">$75</td>
                                 <td class="text-center"><span class="btn btn-danger rounded-0 remove"><i class="fa fa-times"></i></span>
                                 </td>
                             </tr>
@@ -563,24 +563,24 @@
                     </table>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-3 cart-summary">
-                <div class="p-3 border">
+            <div class="cart-summary offset-lg-6 col-lg-6 col-md-12">
+                <div class="p-3">
                     <ul class="list-group mb-3 rounded-0">
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <li class="list-group-item d-flex justify-content-between ">
                           <div>
                             <h6 class="my-0">Sub Total</h6>
                             <!-- <small class="text-muted">Brief description</small> -->
                           </div>
                           <span class="text-muted">$180</span>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <li class="list-group-item d-flex justify-content-between ">
                           <div>
                             <h6 class="my-0">Tax</h6>
                             <!-- <small class="text-muted">Brief description</small> -->
                           </div>
                           <span class="text-muted">$10</span>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <li class="list-group-item d-flex justify-content-between ">
                           <div>
                             <h6 class="my-0">Total</h6>
                             <!-- <small class="text-muted">Brief description</small> -->
@@ -600,7 +600,7 @@
                         </li>
                       </ul>
                       <form class="rounded-0 mb-3">
-                        <div class="input-group">
+                        <div class="input-group promo-container">
                           <input type="text" class="form-control rounded-0" placeholder="Promo Code" autocomplete="off">
                           <button type="submit" class="btn btn-danger rounded-0">Redeem</button>
                         </div>

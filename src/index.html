@@ -1422,6 +1422,17 @@
             perView: 3,
             autoplay: 3000,
             hoverpause: true,
+            breakpoints: {
+                1024: {
+                    perView: 3
+                },
+                800: {
+                    perView: 2
+                },
+                600: {
+                    perView: 1
+                }
+            },
         }).mount()
 
         new Glide('.vertical-carousel', {
