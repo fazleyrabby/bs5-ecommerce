@@ -97,6 +97,13 @@ header.fixed-top a:not(.mobile-icon) i {
 }
 
 /* hero section  */
+.hero-container{
+    gap: 1rem;
+    .hero-right-content{
+        flex: 1;
+    }
+}
+
 .top-carousel {
     height: 400px;
 }
@@ -318,7 +325,6 @@ header.fixed-top a:not(.mobile-icon) i {
 /* Cart Page  */
 .absolute-category {
     position: absolute;
-    min-width: 414px;
     border: 0.2px solid var(--bs-gray-200);
     background: var(--bs-light);
     z-index: 999;

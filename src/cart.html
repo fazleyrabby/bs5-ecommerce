@@ -305,20 +305,20 @@
 
     <!-- nav section -->
     <section class="container">
-        <div class="row">
+        <div class="d-flex justify-content-between hero-container">
             <!-- Sidebar Menu  -->
-            <div class="col-md-4">
+            <div class="hero-sidebar d-none d-md-block w-25 position-relative">
                 <div class="accordion d-none d-md-block" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item rounded-0">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                             <span class="accordion-button bg-dark text-white rounded-0 border-0 all-categories-btn"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
                                 aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;All Categories
+                                <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Categories
                             </span>
                         </h2>
                         <div id="panelsStayOpen-collapseOne"
-                            class="accordion-collapse collapse rounded-0 absolute-category"
+                            class="accordion-collapse collapse rounded-0 absolute-category w-100"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body p-0 rounded-0">
                                 <nav class="sidebar">
@@ -378,11 +378,11 @@
                 </div>
             </div>
             <!-- Top Slider  -->
-            <div class="col-md-8">
+            <div class="hero-right-content">
                 <div class="d-flex mb-3">
                     <div class="d-flex d-md-none">
                         <span
-                            class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center" title="All Categories"
+                            class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center" title="Categories"
                             type="button" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                             <i class="fa-solid fa-bars"></i>
@@ -390,7 +390,7 @@
                         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
                             id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">All Categories
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Categories
                                 </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
@@ -464,7 +464,7 @@
                         </ul>
                         <input type="text" class="form-control rounded-0" placeholder="Search Term.."
                             aria-label="Text input with dropdown button">
-                        <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark">Search</span>
+                        <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark px-4">Search</span>
                     </div>
                     <!-- <div class="col-md-4">other info</div> -->
                 </div>
@@ -564,7 +564,7 @@
                 </div>
             </div>
             <div class="cart-summary offset-lg-6 col-lg-6 col-md-12">
-                <div class="p-3">
+                <div>
                     <ul class="list-group mb-3 rounded-0">
                         <li class="list-group-item d-flex justify-content-between ">
                           <div>

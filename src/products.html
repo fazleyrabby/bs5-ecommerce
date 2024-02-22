@@ -427,20 +427,20 @@
 
     <!-- nav section -->
     <section class="container">
-        <div class="row">
+        <div class="d-flex justify-content-between hero-container">
             <!-- Sidebar Menu  -->
-            <div class="col-md-4">
+            <div class="hero-sidebar d-none d-md-block w-25 position-relative">
                 <div class="accordion d-none d-md-block" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item rounded-0">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <span class="accordion-button bg-dark  text-white rounded-0 border-0 all-categories-btn"
+                            <span class="accordion-button bg-dark text-white rounded-0 border-0 all-categories-btn"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
                                 aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;All Categories
+                                <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Categories
                             </span>
                         </h2>
                         <div id="panelsStayOpen-collapseOne"
-                            class="accordion-collapse collapse rounded-0 absolute-category"
+                            class="accordion-collapse collapse rounded-0 absolute-category w-100"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body p-0 rounded-0">
                                 <nav class="sidebar">
@@ -500,11 +500,11 @@
                 </div>
             </div>
             <!-- Top Slider  -->
-            <div class="col-md-8">
+            <div class="hero-right-content">
                 <div class="d-flex mb-3">
                     <div class="d-flex d-md-none">
                         <span
-                            class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center" title="All Categories"
+                            class="bg-success text-white mobile-category-btn px-3 py-2 d-flex d-md-none align-items-center" title="Categories"
                             type="button" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                             <i class="fa-solid fa-bars"></i>
@@ -512,7 +512,7 @@
                         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
                             id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">All Categories
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Categories
                                 </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
@@ -522,7 +522,8 @@
                                     <ul class="nav flex-column" id="nav_accordion">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span><i class="fa-solid fa-tv"></i></span>
+                                                <span><i
+                                                    class="fa-solid fa-tv"></i></span>
                                                 <span>TV</span></a>
                                         </li>
                                         <li class="nav-item has-submenu">
@@ -536,7 +537,7 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item has-submenu">
-                                            <a class="nav-link" href="#">
+                                            <a class="nav-link" href="#"> 
                                                 <span><i class="fa-solid fa-gamepad"></i></span>
                                                 <span>Game</span> </a>
                                             <ul class="submenu collapse shadow">
@@ -547,31 +548,24 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
+                                            <a class="nav-link" href="#"> 
                                                 <span><i class="fa-solid fa-camera"></i></span><span>Camera</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i
-                                                        class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-screwdriver-wrench"></i></span><span>Accessories</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i
-                                                        class="fa-solid fa-headphones"></i></span> <span>Audio</span>
-                                            </a>
+                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-headphones"></i></span> <span>Audio</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span>
-                                                <span>Furnitures</span> </a>
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-couch"></i></span> <span>Furnitures</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i
-                                                        class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
+                                            <a class="nav-link" href="#"><span><i class="fa-solid fa-shirt"></i></span><span>Cloth</span> </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"> <span><i
-                                                        class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span>
-                                            </a>
+                                            <a class="nav-link" href="#"> <span><i class="fa-solid fa-kitchen-set"></i></span><span>Kitchen</span> </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -592,7 +586,7 @@
                         </ul>
                         <input type="text" class="form-control rounded-0" placeholder="Search Term.."
                             aria-label="Text input with dropdown button">
-                        <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark">Search</span>
+                        <span class="input-group-text btn btn-success rounded-0 d-flex bg-dark px-4">Search</span>
                     </div>
                     <!-- <div class="col-md-4">other info</div> -->
                 </div>
